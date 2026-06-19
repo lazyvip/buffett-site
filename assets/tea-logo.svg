@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Afternoon Tea 巴菲特下午茶">
+  <title>Afternoon Tea · 巴菲特下午茶 — Ritual Warmth</title>
+  <desc>金色茶杯 + 三缕蒸汽自然化作对话气泡。右上角暖光渐晕暗示烛光下的对谈。金色烫金质感，深蓝背景专用。</desc>
+
+  <defs>
+    <!-- 和知识库 logo 同系列金色渐变 -->
+    <linearGradient id="teaGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B6914"/>
+      <stop offset="28%" stop-color="#B8860B"/>
+      <stop offset="52%" stop-color="#E8C35E"/>
+      <stop offset="78%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+  </defs>
+
+  <g fill="none" stroke="url(#teaGold)" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- 三缕蒸汽：两条波浪 + 右侧化为对话气泡 -->
+    <!-- 左 1 号蒸汽 -->
+    <path d="M 64 24 Q 72 38, 64 52 Q 56 66, 64 80"
+          stroke-width="5"/>
+    <!-- 左 2 号蒸汽 -->
+    <path d="M 86 16 Q 94 32, 86 48 Q 78 64, 86 80"
+          stroke-width="5"/>
+
+    <!-- 右侧对话气泡：从蒸汽顶部延伸形成 -->
+    <path d="M 108 20
+             Q 108 10, 120 10
+             L 158 10
+             Q 172 10, 172 24
+             L 172 54
+             Q 172 68, 158 68
+             L 130 68
+             L 118 80
+             L 122 68
+             Q 108 68, 108 54
+             Z"
+          stroke-width="5"/>
+
+    <!-- 茶杯主体：梯形杯身 -->
+    <path d="M 44 100
+             L 156 100
+             L 148 156
+             Q 144 166, 134 166
+             L 66 166
+             Q 56 166, 52 156
+             Z"
+          stroke-width="6"/>
+
+    <!-- 杯耳（右侧 C 形） -->
+    <path d="M 156 114
+             Q 178 114, 178 132
+             Q 178 150, 156 148"
+          stroke-width="5.5"/>
+
+    <!-- 碟子：杯底下方的短线 -->
+    <line x1="32" y1="180" x2="168" y2="180" stroke-width="5"/>
+
+  </g>
+</svg>

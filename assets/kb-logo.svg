@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="LearnBuffett 巴菲特知识库">
+  <title>LearnBuffett · 巴菲特知识库 — Heritage Crest</title>
+  <desc>同心金徽：六个节点标记知识入口（概念·公司·人物·信件·索引·年代），中心双环靶心是巴菲特的投资核心。金色刷纹模拟烫金质感。单色可塑——用 currentColor 可在前端切换金/米白/深蓝。</desc>
+
+  <defs>
+    <!-- 金色刷纹渐变：三段式模拟金属反光 -->
+    <linearGradient id="kbGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B6914"/>
+      <stop offset="28%" stop-color="#B8860B"/>
+      <stop offset="52%" stop-color="#E8C35E"/>
+      <stop offset="78%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+    <!-- 内靶心的径向渐变：中心稍亮 -->
+    <radialGradient id="kbGoldCore" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#E8C35E"/>
+      <stop offset="60%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </radialGradient>
+  </defs>
+
+  <g>
+    <!-- 外圈细线大圆 -->
+    <circle cx="100" cy="100" r="86" fill="none" stroke="url(#kbGold)" stroke-width="1.5"/>
+
+    <!-- 中圈细线圆 -->
+    <circle cx="100" cy="100" r="66" fill="none" stroke="url(#kbGold)" stroke-width="1.8"/>
+
+    <!-- 内靶心双环 -->
+    <circle cx="100" cy="100" r="44" fill="none" stroke="url(#kbGoldCore)" stroke-width="8"/>
+    <circle cx="100" cy="100" r="26" fill="none" stroke="url(#kbGoldCore)" stroke-width="5"/>
+
+    <!-- 中心小实心圆 -->
+    <circle cx="100" cy="100" r="6.5" fill="url(#kbGoldCore)"/>
+
+    <!-- 六节点：顶 + 底（大），左右各成对（小） -->
+    <!-- 顶 / 底：代表"现在—起点" -->
+    <circle cx="100" cy="14" r="4.5" fill="url(#kbGold)"/>
+    <circle cx="100" cy="186" r="4.5" fill="url(#kbGold)"/>
+    <!-- 左成对：18 & 26 分钟位（概念 & 人物） -->
+    <circle cx="15.5" cy="92" r="3.5" fill="url(#kbGold)"/>
+    <circle cx="15.5" cy="108" r="3.5" fill="url(#kbGold)"/>
+    <!-- 右成对：（公司 & 信件） -->
+    <circle cx="184.5" cy="92" r="3.5" fill="url(#kbGold)"/>
+    <circle cx="184.5" cy="108" r="3.5" fill="url(#kbGold)"/>
+  </g>
+</svg>

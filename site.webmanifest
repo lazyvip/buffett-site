@@ -1,0 +1,23 @@
+{
+  "name": "巴菲特知识库",
+  "short_name": "巴菲特库",
+  "description": "巴菲特致股东的信中文全文 + 49 个投资概念 + 61 家公司深度档案",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF7F2",
+  "theme_color": "#B8860B",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/og-default.png",
+      "sizes": "1200x630",
+      "type": "image/png"
+    }
+  ]
+}

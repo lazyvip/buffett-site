@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>复利（Compounding） — 巴菲特投资哲学 | 巴菲特知识库</title>
+
+<link rel="canonical" href="https://buffett.lazyso.com/concepts/复利">
+<link rel="alternate" hreflang="zh-Hans" href="https://buffett.lazyso.com/concepts/复利">
+<link rel="alternate" hreflang="x-default" href="https://buffett.lazyso.com/concepts/复利">
+<meta name="description" content="复利（Compounding）：留存收益持续再投资于优质生意而非分红，伯克希尔六十年神话的底层数学；规模终将拖慢复利速度">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#B8860B">
+<meta property="og:title" content="复利（Compounding） — 巴菲特投资哲学 | 巴菲特知识库">
+<meta property="og:description" content="复利（Compounding）：留存收益持续再投资于优质生意而非分红，伯克希尔六十年神话的底层数学；规模终将拖慢复利速度">
+<meta property="og:url" content="https://buffett.lazyso.com/concepts/复利">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="巴菲特知识库">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://buffett.lazyso.com/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="巴菲特知识库">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="复利（Compounding） — 巴菲特投资哲学 | 巴菲特知识库">
+<meta name="twitter:description" content="复利（Compounding）：留存收益持续再投资于优质生意而非分红，伯克希尔六十年神话的底层数学；规模终将拖慢复利速度">
+<meta name="twitter:image" content="https://buffett.lazyso.com/assets/og-default.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://buffett.lazyso.com/"},{"@type":"ListItem","position":2,"name":"概念","item":"https://buffett.lazyso.com/concepts/"},{"@type":"ListItem","position":3,"name":"复利"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"DefinedTerm","name":"复利","url":"https://buffett.lazyso.com/concepts/复利","inDefinedTermSet":{"@type":"DefinedTermSet","name":"巴菲特投资概念辞典","url":"https://buffett.lazyso.com/index-pages/核心思想索引"},"alternateName":"Compounding"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"复利是什么？","acceptedAnswer":{"@type":"Answer","text":"复利（Compounding）：留存收益持续再投资于优质生意而非分红，伯克希尔六十年神话的底层数学；规模终将拖慢复利速度"}},{"@type":"Question","name":"巴菲特在哪些信里谈过复利？","acceptedAnswer":{"@type":"Answer","text":"在 1960 巴菲特致合伙人信、1961 巴菲特致合伙人信、1962 巴菲特致合伙人信、1962年中 巴菲特致合伙人信、1963 巴菲特致合伙人信、1963年中 巴菲特致合伙人信 等 59 处提及。"}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=1.9.7">
+</head>
+<body>
+<button class="hamburger" onclick="document.getElementById('sidebar').classList.toggle('open')">☰</button>
+<aside class="sidebar" id="sidebar">
+<div class="sidebar-header"><a href="../index.html" class="logo"><img src="../assets/kb-logo.svg" class="logo-icon" alt="巴菲特知识库 logo" width="32" height="32"><span>巴菲特知识库</span></a></div>
+<div class="sidebar-nav">
+<a href="../index.html" class="nav-link nav-home">🏛 首页</a>
+<div class="search-box"><input type="text" id="search-input" placeholder="搜索标题或内容..." autocomplete="off"><div id="search-results"></div></div>
+<div class="nav-group">
+<div class="nav-group-title" onclick="toggle('00_索引')"><span class="caret"></span>索引<span class="badge">4</span></div>
+<div class="nav-group-items" id="00_索引">
+<a href="../index-pages/巴菲特致股东信总览.html" class="nav-link" title="巴菲特致股东信总览">巴菲特致股东信总览</a>
+<a href="../index-pages/核心思想索引.html" class="nav-link" title="核心思想索引">核心思想索引</a>
+<a href="../index-pages/公司索引.html" class="nav-link" title="公司索引">公司索引</a>
+<a href="../index-pages/人物索引.html" class="nav-link" title="人物索引">人物索引</a>
+</div></div>
+<div class="nav-group">
+<div class="nav-group-title" onclick="toggle('01_合伙人信')"><span class="caret"></span>合伙人信<span class="badge">35</span></div>
+<div class="nav-group-items" id="01_合伙人信">
+<a href="../partnership/1956-有限合伙协议.html" class="nav-link" title="1956 有限合伙协议">1956 有限合伙协议</a>
+<a href="../partnership/1957-巴菲特致合伙人信.html" class="nav-link" title="1957 巴菲特致合伙人信">1957 巴菲特致合伙人信</a>
+<a href="../partnership/1958-巴菲特致合伙人信.html" class="nav-link" title="1958 巴菲特致合伙人信">1958 巴菲特致合伙人信</a>
+<a href="../partnership/1959-巴菲特致合伙人信.html" class="nav-link" title="1959 巴菲特致合伙人信">1959 巴菲特致合伙人信</a>
+<a href="../partnership/1960-巴菲特致合伙人信.html" class="nav-link" title="1960 巴菲特致合伙人信">1960 巴菲特致合伙人信</a>
+<a href="../partnership/1961年中-巴菲特致合伙人信.html" class="nav-link" title="1961年中 巴菲特致合伙人信">1961年中 巴菲特致合伙人信</a>
+<a href="../partnership/1961-巴菲特致合伙人信.html" class="nav-link" title="1961 巴菲特致合伙人信">1961 巴菲特致合伙人信</a>
+<a href="../partnership/1962年中-巴菲特致合伙人信.html" class="nav-link" title="1962年中 巴菲特致合伙人信">1962年中 巴菲特致合伙人信</a>
+<a href="../partnership/1962年11月-巴菲特致合伙人信.html" class="nav-link" title="1962年11月 巴菲特致合伙人信">1962年11月 巴菲特致合伙人信</a>
+<a href="../partnership/1962年12月-巴菲特致合伙人信.html" class="nav-link" title="1962年12月 巴菲特致合伙人信">1962年12月 巴菲特致合伙人信</a>
+<a href="../partnership/1962-巴菲特致合伙人信.html" class="nav-link" title="1962 巴菲特致合伙人信">1962 巴菲特致合伙人信</a>
+<a href="../partnership/1963年中-巴菲特致合伙人信.html" class="nav-link" title="1963年中 巴菲特致合伙人信">1963年中 巴菲特致合伙人信</a>
+<a href="../partnership/1963年11月-巴菲特致合伙人信.html" class="nav-link" title="1963年11月 巴菲特致合伙人信">1963年11月 巴菲特致合伙人信</a>
+<a href="../partnership/1963年12月-巴菲特致合伙人信.html" class="nav-link" title="1963年12月 巴菲特致合伙人信">1963年12月 巴菲特致合伙人信</a>
+<a href="../partnership/1963-巴菲特致合伙人信.html" class="nav-link" title="1963 巴菲特致合伙人信">1963 巴菲特致合伙人信</a>
+<a href="../partnership/1964年中-巴菲特致合伙人信.html" class="nav-link" title="1964年中 巴菲特致合伙人信">1964年中 巴菲特致合伙人信</a>
+<a href="../partnership/1964-巴菲特致合伙人信.html" class="nav-link" title="1964 巴菲特致合伙人信">1964 巴菲特致合伙人信</a>
+<a href="../partnership/1965年中-巴菲特致合伙人信.html" class="nav-link" title="1965年中 巴菲特致合伙人信">1965年中 巴菲特致合伙人信</a>
+<a href="../partnership/1965年11月-巴菲特致合伙人信.html" class="nav-link" title="1965年11月 巴菲特致合伙人信">1965年11月 巴菲特致合伙人信</a>
+<a href="../partnership/1965-巴菲特致合伙人信.html" class="nav-link" title="1965 巴菲特致合伙人信">1965 巴菲特致合伙人信</a>
+<a href="../partnership/1966年中-巴菲特致合伙人信.html" class="nav-link" title="1966年中 巴菲特致合伙人信">1966年中 巴菲特致合伙人信</a>
+<a href="../partnership/1966年11月-巴菲特致合伙人信.html" class="nav-link" title="1966年11月 巴菲特致合伙人信">1966年11月 巴菲特致合伙人信</a>
+<a href="../partnership/1966-巴菲特致合伙人信.html" class="nav-link" title="1966 巴菲特致合伙人信">1966 巴菲特致合伙人信</a>
+<a href="../partnership/1967年中-巴菲特致合伙人信.html" class="nav-link" title="1967年中 巴菲特致合伙人信">1967年中 巴菲特致合伙人信</a>
+<a href="../partnership/1967年10月-巴菲特致合伙人信.html" class="nav-link" title="1967年10月 巴菲特致合伙人信">1967年10月 巴菲特致合伙人信</a>
+<a href="../partnership/1967年11月-巴菲特致合伙人信.html" class="nav-link" title="1967年11月 巴菲特致合伙人信">1967年11月 巴菲特致合伙人信</a>
+<a href="../partnership/1967-巴菲特致合伙人信.html" class="nav-link" title="1967 巴菲特致合伙人信">1967 巴菲特致合伙人信</a>
+<a href="../partnership/1968年中-巴菲特致合伙人信.html" class="nav-link" title="1968年中 巴菲特致合伙人信">1968年中 巴菲特致合伙人信</a>
+<a href="../partnership/1968年11月-巴菲特致合伙人信.html" class="nav-link" title="1968年11月 巴菲特致合伙人信">1968年11月 巴菲特致合伙人信</a>
+<a href="../partnership/1968-巴菲特致合伙人信.html" class="nav-link" title="1968 巴菲特致合伙人信">1968 巴菲特致合伙人信</a>
+<a href="../partnership/1969年5月-巴菲特致合伙人信.html" class="nav-link" title="1969年5月 巴菲特致合伙人信">1969年5月 巴菲特致合伙人信</a>
+<a href="../partnership/1969年10月-巴菲特致合伙人信.html" class="nav-link" title="1969年10月 巴菲特致合伙人信">1969年10月 巴菲特致合伙人信</a>
+<a href="../partnership/1969年12月-巴菲特致合伙人信.html" class="nav-link" title="1969年12月 巴菲特致合伙人信">1969年12月 巴菲特致合伙人信</a>
+<a href="../partnership/1969年12月26日-巴菲特致合伙人信.html" class="nav-link" title="1969年12月26日 巴菲特致合伙人信">1969年12月26日 巴菲特致合伙人信</a>
+<a href="../partnership/1970年2月-巴菲特致合伙人信.html" class="nav-link" title="1970年2月 巴菲特致合伙人信">1970年2月 巴菲特致合伙人信</a>
+</div></div>
+<div class="nav-group">
+<div class="nav-group-title" onclick="toggle('02_伯克希尔股东信')"><span class="caret"></span>伯克希尔股东信<span class="badge">60</span></div>
+<div class="nav-group-items" id="02_伯克希尔股东信">
+<a href="../berkshire/1965-巴菲特致股东信.html" class="nav-link" title="1965 巴菲特致股东信">1965 巴菲特致股东信</a>
+<a href="../berkshire/1966-巴菲特致股东信.html" class="nav-link" title="1966 巴菲特致股东信">1966 巴菲特致股东信</a>
+<a href="../berkshire/1967-巴菲特致股东信.html" class="nav-link" title="1967 巴菲特致股东信">1967 巴菲特致股东信</a>
+<a href="../berkshire/1968-巴菲特致股东信.html" class="nav-link" title="1968 巴菲特致股东信">1968 巴菲特致股东信</a>
+<a href="../berkshire/1969-巴菲特致股东信.html" class="nav-link" title="1969 巴菲特致股东信">1969 巴菲特致股东信</a>
+<a href="../berkshire/1970-巴菲特致股东信.html" class="nav-link" title="1970 巴菲特致股东信">1970 巴菲特致股东信</a>
+<a href="../berkshire/1971-巴菲特致股东信.html" class="nav-link" title="1971 巴菲特致股东信">1971 巴菲特致股东信</a>
+<a href="../berkshire/1972-巴菲特致股东信.html" class="nav-link" title="1972 巴菲特致股东信">1972 巴菲特致股东信</a>
+<a href="../berkshire/1973-巴菲特致股东信.html" class="nav-link" title="1973 巴菲特致股东信">1973 巴菲特致股东信</a>
+<a href="../berkshire/1974-巴菲特致股东信.html" class="nav-link" title="1974 巴菲特致股东信">1974 巴菲特致股东信</a>
+<a href="../berkshire/1975-巴菲特致股东信.html" class="nav-link" title="1975 巴菲特致股东信">1975 巴菲特致股东信</a>
+<a href="../berkshire/1976-巴菲特致股东信.html" class="nav-link" title="1976 巴菲特致股东信">1976 巴菲特致股东信</a>
+<a href="../berkshire/1977-巴菲特致股东信.html" class="nav-link" title="1977 巴菲特致股东信">1977 巴菲特致股东信</a>
+<a href="../berkshire/1978-巴菲特致股东信.html" class="nav-link" title="1978 巴菲特致股东信">1978 巴菲特致股东信</a>
+<a href="../berkshire/1979-巴菲特致股东信.html" class="nav-link" title="1979 巴菲特致股东信">1979 巴菲特致股东信</a>
+<a href="../berkshire/1980-巴菲特致股东信.html" class="nav-link" title="1980 巴菲特致股东信">1980 巴菲特致股东信</a>
+<a href="../berkshire/1981-巴菲特致股东信.html" class="nav-link" title="1981 巴菲特致股东信">1981 巴菲特致股东信</a>
+<a href="../berkshire/1982-巴菲特致股东信.html" class="nav-link" title="1982 巴菲特致股东信">1982 巴菲特致股东信</a>
+<a href="../berkshire/1983-巴菲特致股东信.html" class="nav-link" title="1983 巴菲特致股东信">1983 巴菲特致股东信</a>
+<a href="../berkshire/1984-巴菲特致股东信.html" class="nav-link" title="1984 巴菲特致股东信">1984 巴菲特致股东信</a>
+<a href="../berkshire/1985-巴菲特致股东信.html" class="nav-link" title="1985 巴菲特致股东信">1985 巴菲特致股东信</a>
+<a href="../berkshire/1986-巴菲特致股东信.html" class="nav-link" title="1986 巴菲特致股东信">1986 巴菲特致股东信</a>
+<a href="../berkshire/1987-巴菲特致股东信.html" class="nav-link" title="1987 巴菲特致股东信">1987 巴菲特致股东信</a>
+<a href="../berkshire/1988-巴菲特致股东信.html" class="nav-link" title="1988 巴菲特致股东信">1988 巴菲特致股东信</a>
+<a href="../berkshire/1989-巴菲特致股东信.html" class="nav-link" title="1989 巴菲特致股东信">1989 巴菲特致股东信</a>
+<a href="../berkshire/1990-巴菲特致股东信.html" class="nav-link" title="1990 巴菲特致股东信">1990 巴菲特致股东信</a>
+<a href="../berkshire/1991-巴菲特致股东信.html" class="nav-link" title="1991 巴菲特致股东信">1991 巴菲特致股东信</a>
+<a href="../berkshire/1992-巴菲特致股东信.html" class="nav-link" title="1992 巴菲特致股东信">1992 巴菲特致股东信</a>
+<a href="../berkshire/1993-巴菲特致股东信.html" class="nav-link" title="1993 巴菲特致股东信">1993 巴菲特致股东信</a>
+<a href="../berkshire/1994-巴菲特致股东信.html" class="nav-link" title="1994 巴菲特致股东信">1994 巴菲特致股东信</a>
+<a href="../berkshire/1995-巴菲特致股东信.html" class="nav-link" title="1995 巴菲特致股东信">1995 巴菲特致股东信</a>
+<a href="../berkshire/1996-巴菲特致股东信.html" class="nav-link" title="1996 巴菲特致股东信">1996 巴菲特致股东信</a>
+<a href="../berkshire/1997-巴菲特致股东信.html" class="nav-link" title="1997 巴菲特致股东信">1997 巴菲特致股东信</a>
+<a href="../berkshire/1998-巴菲特致股东信.html" class="nav-link" title="1998 巴菲特致股东信">1998 巴菲特致股东信</a>
+<a href="../berkshire/1999-巴菲特致股东信.html" class="nav-link" title="1999 巴菲特致股东信">1999 巴菲特致股东信</a>
+<a href="../berkshire/2000-巴菲特致股东信.html" class="nav-link" title="2000 巴菲特致股东信">2000 巴菲特致股东信</a>
+<a href="../berkshire/2001-巴菲特致股东信.html" class="nav-link" title="2001 巴菲特致股东信">2001 巴菲特致股东信</a>
+<a href="../berkshire/2002-巴菲特致股东信.html" class="nav-link" title="2002 巴菲特致股东信">2002 巴菲特致股东信</a>
+<a href="../berkshire/2003-巴菲特致股东信.html" class="nav-link" title="2003 巴菲特致股东信">2003 巴菲特致股东信</a>
+<a href="../berkshire/2004-巴菲特致股东信.html" class="nav-link" title="2004 巴菲特致股东信">2004 巴菲特致股东信</a>
+<a href="../berkshire/2005-巴菲特致股东信.html" class="nav-link" title="2005 巴菲特致股东信">2005 巴菲特致股东信</a>
+<a href="../berkshire/2006-巴菲特致股东信.html" class="nav-link" title="2006 巴菲特致股东信">2006 巴菲特致股东信</a>
+<a href="../berkshire/2007-巴菲特致股东信.html" class="nav-link" title="2007 巴菲特致股东信">2007 巴菲特致股东信</a>
+<a href="../berkshire/2008-巴菲特致股东信.html" class="nav-link" title="2008 巴菲特致股东信">2008 巴菲特致股东信</a>
+<a href="../berkshire/2009-巴菲特致股东信.html" class="nav-link" title="2009 巴菲特致股东信">2009 巴菲特致股东信</a>
+<a href="../berkshire/2010-巴菲特致股东信.html" class="nav-link" title="2010 巴菲特致股东信">2010 巴菲特致股东信</a>
+<a href="../berkshire/2011-巴菲特致股东信.html" class="nav-link" title="2011 巴菲特致股东信">2011 巴菲特致股东信</a>
+<a href="../berkshire/2012-巴菲特致股东信.html" class="nav-link" title="2012 巴菲特致股东信">2012 巴菲特致股东信</a>
+<a href="../berkshire/2013-巴菲特致股东信.html" class="nav-link" title="2013 巴菲特致股东信">2013 巴菲特致股东信</a>
+<a href="../berkshire/2014-巴菲特致股东信.html" class="nav-link" title="2014 巴菲特致股东信">2014 巴菲特致股东信</a>
+<a href="../berkshire/2015-巴菲特致股东信.html" class="nav-link" title="2015 巴菲特致股东信">2015 巴菲特致股东信</a>
+<a href="../berkshire/2016-巴菲特致股东信.html" class="nav-link" title="2016 巴菲特致股东信">2016 巴菲特致股东信</a>
+<a href="../berkshire/2017-巴菲特致股东信.html" class="nav-link" title="2017 巴菲特致股东信">2017 巴菲特致股东信</a>
+<a href="../berkshire/2018-巴菲特致股东信.html" class="nav-link" title="2018 巴菲特致股东信">2018 巴菲特致股东信</a>
+<a href="../berkshire/2019-巴菲特致股东信.html" class="nav-link" title="2019 巴菲特致股东信">2019 巴菲特致股东信</a>
+<a href="../berkshire/2020-巴菲特致股东信.html" class="nav-link" title="2020 巴菲特致股东信">2020 巴菲特致股东信</a>
+<a href="../berkshire/2021-巴菲特致股东信.html" class="nav-link" title="2021 巴菲特致股东信">2021 巴菲特致股东信</a>
+<a href="../berkshire/2022-巴菲特致股东信.html" class="nav-link" title="2022 巴菲特致股东信">2022 巴菲特致股东信</a>
+<a href="../berkshire/2023-巴菲特致股东信.html" class="nav-link" title="2023 巴菲特致股东信">2023 巴菲特致股东信</a>
+<a href="../berkshire/2024-巴菲特致股东信.html" class="nav-link" title="2024 巴菲特致股东信">2024 巴菲特致股东信</a>
+</div></div>
+<div class="nav-group">
+<div class="nav-group-title" onclick="toggle('03_特别信件')"><span class="caret"></span>特别信件<span class="badge">3</span></div>
+<div class="nav-group-items" id="03_特别信件">
+<a href="../special/2014-副董事长的思考.html" class="nav-link" title="2014 副董事长的思考">2014 副董事长的思考</a>
+<a href="../special/2014-伯克希尔的过去现在与未来.html" class="nav-link" title="2014 伯克希尔的过去现在与未来">2014 伯克希尔的过去现在与未来</a>
+<a href="../special/2025-感恩节致辞.html" class="nav-link" title="2025 感恩节致辞">2025 感恩节致辞</a>
+</div></div>
+<div class="nav-group">
+<div class="nav-group-title open" onclick="toggle('概念')"><span class="caret"></span>概念<span class="badge">49</span></div>
+<div class="nav-group-items open" id="概念">
+<a href="内在价值.html" class="nav-link" title="内在价值">内在价值</a>
+<a href="管理层.html" class="nav-link" title="管理层">管理层</a>
+<a href="复利.html" class="nav-link active" title="复利">复利</a>
+<a href="股息.html" class="nav-link" title="股息">股息</a>
+<a href="账面价值.html" class="nav-link" title="账面价值">账面价值</a>
+<a href="保险业.html" class="nav-link" title="保险业">保险业</a>
+<a href="护城河.html" class="nav-link" title="护城河">护城河</a>
+<a href="资本配置.html" class="nav-link" title="资本配置">资本配置</a>
+<a href="低估.html" class="nav-link" title="低估">低估</a>
+<a href="承保纪律.html" class="nav-link" title="承保纪律">承保纪律</a>
+<a href="保险浮存金.html" class="nav-link" title="保险浮存金">保险浮存金</a>
+<a href="分散投资.html" class="nav-link" title="分散投资">分散投资</a>
+<a href="回购.html" class="nav-link" title="回购">回购</a>
+<a href="杠杆.html" class="nav-link" title="杠杆">杠杆</a>
+<a href="留存收益.html" class="nav-link" title="留存收益">留存收益</a>
+<a href="银行业.html" class="nav-link" title="银行业">银行业</a>
+<a href="品牌.html" class="nav-link" title="品牌">品牌</a>
+<a href="通货膨胀.html" class="nav-link" title="通货膨胀">通货膨胀</a>
+<a href="竞争优势.html" class="nav-link" title="竞争优势">竞争优势</a>
+<a href="纺织业务.html" class="nav-link" title="纺织业务">纺织业务</a>
+<a href="商誉.html" class="nav-link" title="商誉">商誉</a>
+<a href="买入价格.html" class="nav-link" title="买入价格">买入价格</a>
+<a href="股东导向.html" class="nav-link" title="股东导向">股东导向</a>
+<a href="零售与消费.html" class="nav-link" title="零售与消费">零售与消费</a>
+<a href="商业模式.html" class="nav-link" title="商业模式">商业模式</a>
+<a href="能源.html" class="nav-link" title="能源">能源</a>
+<a href="长期持有.html" class="nav-link" title="长期持有">长期持有</a>
+<a href="安全边际.html" class="nav-link" title="安全边际">安全边际</a>
+<a href="特许经营权.html" class="nav-link" title="特许经营权">特许经营权</a>
+<a href="市场先生.html" class="nav-link" title="市场先生">市场先生</a>
+<a href="能力圈.html" class="nav-link" title="能力圈">能力圈</a>
+<a href="航空业.html" class="nav-link" title="航空业">航空业</a>
+<a href="企业文化.html" class="nav-link" title="企业文化">企业文化</a>
+<a href="收购.html" class="nav-link" title="收购">收购</a>
+<a href="市盈率.html" class="nav-link" title="市盈率">市盈率</a>
+<a href="科技与互联网.html" class="nav-link" title="科技与互联网">科技与互联网</a>
+<a href="衍生品.html" class="nav-link" title="衍生品">衍生品</a>
+<a href="透视盈余.html" class="nav-link" title="透视盈余">透视盈余</a>
+<a href="市场预测.html" class="nav-link" title="市场预测">市场预测</a>
+<a href="铁路运输.html" class="nav-link" title="铁路运输">铁路运输</a>
+<a href="集中投资.html" class="nav-link" title="集中投资">集中投资</a>
+<a href="有效市场.html" class="nav-link" title="有效市场">有效市场</a>
+<a href="套利.html" class="nav-link" title="套利">套利</a>
+<a href="债券.html" class="nav-link" title="债券">债券</a>
+<a href="媒体与出版.html" class="nav-link" title="媒体与出版">媒体与出版</a>
+<a href="诚信.html" class="nav-link" title="诚信">诚信</a>
+<a href="公司治理.html" class="nav-link" title="公司治理">公司治理</a>
+<a href="可转换证券.html" class="nav-link" title="可转换证券">可转换证券</a>
+<a href="税收效率.html" class="nav-link" title="税收效率">税收效率</a>
+</div></div>
+<div class="nav-group">
+<div class="nav-group-title" onclick="toggle('公司')"><span class="caret"></span>公司<span class="badge">61</span></div>
+<div class="nav-group-items" id="公司">
+<a href="../companies/伯克希尔哈撒韦.html" class="nav-link" title="伯克希尔哈撒韦">伯克希尔哈撒韦</a>
+<a href="../companies/盖可保险.html" class="nav-link" title="盖可保险">盖可保险</a>
+<a href="../companies/可口可乐.html" class="nav-link" title="可口可乐">可口可乐</a>
+<a href="../companies/喜诗糖果.html" class="nav-link" title="喜诗糖果">喜诗糖果</a>
+<a href="../companies/国民保险公司.html" class="nav-link" title="国民保险公司">国民保险公司</a>
+<a href="../companies/美国运通.html" class="nav-link" title="美国运通">美国运通</a>
+<a href="../companies/华盛顿邮报.html" class="nav-link" title="华盛顿邮报">华盛顿邮报</a>
+<a href="../companies/内布拉斯加家具店.html" class="nav-link" title="内布拉斯加家具店">内布拉斯加家具店</a>
+<a href="../companies/富国银行.html" class="nav-link" title="富国银行">富国银行</a>
+<a href="../companies/蓝筹印花.html" class="nav-link" title="蓝筹印花">蓝筹印花</a>
+<a href="../companies/大都会通信.html" class="nav-link" title="大都会通信">大都会通信</a>
+<a href="../companies/波仙珠宝.html" class="nav-link" title="波仙珠宝">波仙珠宝</a>
+<a href="../companies/穆迪.html" class="nav-link" title="穆迪">穆迪</a>
+<a href="../companies/通用再保险.html" class="nav-link" title="通用再保险">通用再保险</a>
+<a href="../companies/BNSF铁路.html" class="nav-link" title="BNSF铁路">BNSF铁路</a>
+<a href="../companies/吉列.html" class="nav-link" title="吉列">吉列</a>
+<a href="../companies/布法罗新闻报.html" class="nav-link" title="布法罗新闻报">布法罗新闻报</a>
+<a href="../companies/韦斯科.html" class="nav-link" title="韦斯科">韦斯科</a>
+<a href="../companies/苹果.html" class="nav-link" title="苹果">苹果</a>
+<a href="../companies/中美能源.html" class="nav-link" title="中美能源">中美能源</a>
+<a href="../companies/所罗门.html" class="nav-link" title="所罗门">所罗门</a>
+<a href="../companies/斯科特费泽.html" class="nav-link" title="斯科特费泽">斯科特费泽</a>
+<a href="../companies/高盛.html" class="nav-link" title="高盛">高盛</a>
+<a href="../companies/克莱顿房屋.html" class="nav-link" title="克莱顿房屋">克莱顿房屋</a>
+<a href="../companies/美国银行.html" class="nav-link" title="美国银行">美国银行</a>
+<a href="../companies/通用电气.html" class="nav-link" title="通用电气">通用电气</a>
+<a href="../companies/马蒙集团.html" class="nav-link" title="马蒙集团">马蒙集团</a>
+<a href="../companies/卡夫亨氏.html" class="nav-link" title="卡夫亨氏">卡夫亨氏</a>
+<a href="../companies/世界图书百科全书.html" class="nav-link" title="世界图书百科全书">世界图书百科全书</a>
+<a href="../companies/房地美.html" class="nav-link" title="房地美">房地美</a>
+<a href="../companies/IBM.html" class="nav-link" title="IBM">IBM</a>
+<a href="../companies/德克斯特鞋业.html" class="nav-link" title="德克斯特鞋业">德克斯特鞋业</a>
+<a href="../companies/美国合众银行.html" class="nav-link" title="美国合众银行">美国合众银行</a>
+<a href="../companies/利捷航空.html" class="nav-link" title="利捷航空">利捷航空</a>
+<a href="../companies/康菲石油.html" class="nav-link" title="康菲石油">康菲石油</a>
+<a href="../companies/通用汽车.html" class="nav-link" title="通用汽车">通用汽车</a>
+<a href="../companies/飞安公司.html" class="nav-link" title="飞安公司">飞安公司</a>
+<a href="../companies/美国家庭服务.html" class="nav-link" title="美国家庭服务">美国家庭服务</a>
+<a href="../companies/伯克希尔哈撒韦能源.html" class="nav-link" title="伯克希尔哈撒韦能源">伯克希尔哈撒韦能源</a>
+<a href="../companies/州立农业保险.html" class="nav-link" title="州立农业保险">州立农业保险</a>
+<a href="../companies/路博润.html" class="nav-link" title="路博润">路博润</a>
+<a href="../companies/威利家居.html" class="nav-link" title="威利家居">威利家居</a>
+<a href="../companies/森林河公司.html" class="nav-link" title="森林河公司">森林河公司</a>
+<a href="../companies/西方石油.html" class="nav-link" title="西方石油">西方石油</a>
+<a href="../companies/伊斯卡.html" class="nav-link" title="伊斯卡">伊斯卡</a>
+<a href="../companies/冰雪皇后.html" class="nav-link" title="冰雪皇后">冰雪皇后</a>
+<a href="../companies/中国石油.html" class="nav-link" title="中国石油">中国石油</a>
+<a href="../companies/精密铸件.html" class="nav-link" title="精密铸件">精密铸件</a>
+<a href="../companies/鲜果布衣.html" class="nav-link" title="鲜果布衣">鲜果布衣</a>
+<a href="../companies/麦克莱恩.html" class="nav-link" title="麦克莱恩">麦克莱恩</a>
+<a href="../companies/伊藤忠商事.html" class="nav-link" title="伊藤忠商事">伊藤忠商事</a>
+<a href="../companies/比亚迪.html" class="nav-link" title="比亚迪">比亚迪</a>
+<a href="../companies/特许通讯.html" class="nav-link" title="特许通讯">特许通讯</a>
+<a href="../companies/纽约梅隆银行.html" class="nav-link" title="纽约梅隆银行">纽约梅隆银行</a>
+<a href="../companies/雪佛龙.html" class="nav-link" title="雪佛龙">雪佛龙</a>
+<a href="../companies/费希海默制服.html" class="nav-link" title="费希海默制服">费希海默制服</a>
+<a href="../companies/三井物产.html" class="nav-link" title="三井物产">三井物产</a>
+<a href="../companies/三菱商事.html" class="nav-link" title="三菱商事">三菱商事</a>
+<a href="../companies/威瑞森通讯.html" class="nav-link" title="威瑞森通讯">威瑞森通讯</a>
+<a href="../companies/约翰斯曼维尔.html" class="nav-link" title="约翰斯曼维尔">约翰斯曼维尔</a>
+<a href="../companies/科比吸尘器.html" class="nav-link" title="科比吸尘器">科比吸尘器</a>
+</div></div>
+<div class="nav-group">
+<div class="nav-group-title" onclick="toggle('人物')"><span class="caret"></span>人物<span class="badge">7</span></div>
+<div class="nav-group-items" id="人物">
+<a href="../people/芒格.html" class="nav-link" title="芒格">芒格</a>
+<a href="../people/阿吉特·贾恩.html" class="nav-link" title="阿吉特·贾恩">阿吉特·贾恩</a>
+<a href="../people/格雷厄姆.html" class="nav-link" title="格雷厄姆">格雷厄姆</a>
+<a href="../people/格雷格·阿贝尔.html" class="nav-link" title="格雷格·阿贝尔">格雷格·阿贝尔</a>
+<a href="../people/B夫人.html" class="nav-link" title="B夫人">B夫人</a>
+<a href="../people/托德·库姆斯.html" class="nav-link" title="托德·库姆斯">托德·库姆斯</a>
+<a href="../people/泰德·韦施勒.html" class="nav-link" title="泰德·韦施勒">泰德·韦施勒</a>
+</div></div>
+<a href="../graph.html" class="nav-link nav-changelog">🕸️ 知识图谱</a>
+<a href="../changelog.html" class="nav-link nav-changelog">📋 更新日志</a>
+<a href="#" class="nav-link nav-changelog">✍️ 关于作者</a>
+
+<div class="side-projects">
+<div class="side-projects-label">我的其他项目</div>
+
+</div>
+</div></aside>
+<main class="main has-backlinks">
+<div class="main-content">
+<article class="article">
+<div class="meta"><span class="english-name">Compounding</span> <span class="type-badge type-概念">概念</span></div>
+<aside class="munger-related" style="margin-top:24px;padding:12px 16px;background:#FAF7F2;border-left:3px solid #B8860B;border-radius:6px;font-size:13px;color:#6B6560;line-height:1.7">
+💡 想看更多查理·芒格关于「<strong>复利</strong>」的解释 → 
+</aside>
+<h1>复利（Compounding）</h1>
+<p class="geo-def" style="font-size:15px;line-height:1.72;color:#1A2332;background:#FAF7F2;border-left:3px solid #B8860B;border-radius:6px;padding:12px 16px;margin:0 0 24px">复利（Compounding）：留存收益持续再投资于优质生意而非分红，伯克希尔六十年神话的底层数学；规模终将拖慢复利速度</p>
+<h2>概念解析</h2>
+<h3>定义与起源</h3>
+<p>复利，即"利滚利"，指的是投资收益不被取出消费，而是持续再投入，使得下一期的本金包含了上一期的利息，从而产生指数级增长效应。爱因斯坦据传曾称之为"世界第八大奇迹"，虽然这个归因尚有争议，但复利本身的威力毋庸置疑。</p>
+<p>在巴菲特的投资体系中，复利不仅仅是一个数学公式，它是整个伯克希尔商业模式的基石。从1965年接手伯克希尔至今，巴菲特所做的核心决策只有一个：将几乎所有利润留存再投资，而非分配给股东。这一决策看似简单，实则需要股东群体数十年如一日的信任与耐心，更需要管理层持续找到值得投入的优质机会。</p>
+<p>复利思维贯穿巴菲特的整个投资生涯。早在合伙人基金时期（1956-1969年），年轻的巴菲特就在每封年度信中用累计复合收益率来衡量业绩，而非仅仅关注单年回报。他深知，真正创造财富的不是某一年的惊人回报，而是长期持续的、哪怕看似平凡的复合增长。正如他在<a href="../berkshire/1977-巴菲特致股东信.html" class="wikilink">1977 巴菲特致股东信</a>中所指出的：一个完全不动的定期存款账户，靠着复利每年也能稳定产生越来越多的利息收入——关键是增长的速率要配得上所占用的资本。</p>
+<h3>核心要义</h3>
+<p><strong>第一，复利的本质是"留存再投资"，而非简单的利息叠加。</strong></p>
+<p>巴菲特对复利的理解远超教科书。在他看来，复利的核心不是被动等待利息的累积，而是主动将收益配置到高回报率的优质业务中。伯克希尔自1967年以来仅在该年1月发放过一次股息——每股A类股10美分，总计101,755美元。巴菲特在<a href="../berkshire/2024-巴菲特致股东信.html" class="wikilink">2024 巴菲特致股东信</a>中回忆此事时写道："我不记得当初为什么向伯克希尔董事会提出这个建议。现在想来简直像一场噩梦。"此后近六十年，伯克希尔将全部利润留存再投资，每股账面价值从19.46美元增长到数十万美元。</p>
+<p>在<a href="../berkshire/2021-巴菲特致股东信.html" class="wikilink">2021 巴菲特致股东信</a>中，巴菲特以伯克希尔自身的历史来阐释复利的魔力：</p>
+<blockquote>
+<p>1965年初，一切开始改变。伯克希尔迎来了新的管理层，重新配置了可用资金，基本上把所有收益都投入到了各种好生意中，其中大部分在此后多年一直保持优秀。收益再投资加上复利的力量产生了奇妙的效果，股东们变得富有。
+</p>
+</blockquote>
+<p><strong>第二，复利增长终将面临"重力拖拽"，规模是复利的天敌。</strong></p>
+<p>巴菲特从不回避一个事实：随着资本规模的膨胀，维持高复合增长率变得越来越困难。他反复用"几何级数增长终究会被自身的重力所拖慢"来警示投资者。在<a href="../berkshire/1983-巴菲特致股东信.html" class="wikilink">1983 巴菲特致股东信</a>中，他以幽默的方式表达了这一点：</p>
+<blockquote>
+<p>现任管理层19年任期内，账面价值从每股19.46美元增长到975.83美元，年复合增长率约22.6%。考虑到我们目前的规模，这样的回报率是不可能持续的。不信的人适合去做销售，但千万别去搞数学。
+</p>
+</blockquote>
+<p>这一认知反映在伯克希尔的年化复合增长率数据中：从早期的23%逐步降至近年的约19%。但即便如此，60年间每股账面价值的总累计增长仍是一个天文数字。</p>
+<p><strong>第三，复利需要三个前提条件：持续储蓄、避免重大失误、以及"美国顺风"。</strong></p>
+<p>在<a href="../berkshire/2022-巴菲特致股东信.html" class="wikilink">2022 巴菲特致股东信</a>中，巴菲特将伯克希尔的成功归结为几个并行因素：</p>
+<blockquote>
+<p>就这样开始了我们通往2023年的旅程。这是一条颠簸的路，一路上汇聚了几重因素：我们股东<em>持续</em>的储蓄（也就是利润的留存再投资），复利的力量，对<em>重大</em>失误的规避——以及最重要的——美国顺风。没有伯克希尔，美国照样行；反过来可<em>不成</em>。
+</p>
+</blockquote>
+<p>这段话揭示了复利的三个必要条件。首先是"持续储蓄"——利润必须留存而非消费。其次是"避免重大失误"——一次毁灭性的错误可以将多年的复利成果化为乌有，这就是巴菲特反复强调"永远不要冒永久性资本损失的风险"的原因。第三是外部环境——在一个法治健全、经济持续增长的社会中，复利才能真正发挥作用。</p>
+<h3>实践应用</h3>
+<p>复利在巴菲特的投资实践中有三层体现。</p>
+<p><strong>伯克希尔本身就是一部复利教科书。</strong> 从1965年到2022年，伯克希尔每股市值的年复合增长率为19.8%，而同期标普500指数（含股息再投资）为9.9%。看似仅仅多出约10个百分点，但58年累积下来，伯克希尔的总回报率是3,787,464%，而标普500是24,708%。这就是复利差异在长时间维度上的惊人效果。</p>
+<p><strong><a href="../companies/可口可乐.html" class="wikilink">可口可乐</a>和<a href="../companies/美国运通.html" class="wikilink">美国运通</a>是复利在个股投资中的经典案例。</strong> 在<a href="../berkshire/2022-巴菲特致股东信.html" class="wikilink">2022 巴菲特致股东信</a>中，巴菲特详细描述了这两笔投资的复利效应：1994年，伯克希尔从可口可乐获得7,500万美元的股息；到2022年，这一数字增长到了7.04亿美元。美国运通的年度股息从4,100万美元增长到了3.02亿美元。两笔投资的初始成本各约13亿美元，而到2022年底，可口可乐市值250亿美元，美国运通市值220亿美元。巴菲特总结道：</p>
+<blockquote>
+<p>给投资者的启示是：花儿盛开之时，杂草的分量自然就不值一提了。假以时日，只需要几个赢家就能创造奇迹。当然了，早点起步、活到90多岁也有帮助。
+</p>
+</blockquote>
+<p><strong>伯克希尔的税收记录是复利的终极证明。</strong> 由于六十年来持续将利润再投资，伯克希尔向美国财政部累计缴纳了超过1,010亿美元的所得税。2024年一年就缴纳了268亿美元——约占全美企业所得税总额的5%。巴菲特在<a href="../berkshire/2024-巴菲特致股东信.html" class="wikilink">2024 巴菲特致股东信</a>中生动描述道：假如伯克希尔在2024年每隔20分钟就向财政部寄出一张100万美元的支票，到年底仍然会欠联邦政府一大笔钱。</p>
+<h3>常见误区</h3>
+<p><strong>误区一：将复利等同于"买入并死拿"。</strong> 复利的前提是资本被投入到能够持续产生合理回报的业务中。如果一家企业的经济效益在衰退，死拿只会让资本困在"注定走向末路"的业务中。巴菲特在伯克希尔纺织业务上浪费了二十年才学到这个教训。</p>
+<p><strong>误区二：过度关注短期复合增长率。</strong> 有人看到巴菲特早期的年化23%就认为这是可复制的标准。巴菲特自己在几乎每一封年度信中都警告：这个比率未来必将下降。投资者不应以过高的预期复合增长率来做决策。</p>
+<p><strong>误区三：忽视"反复利"效应。</strong> 亏损对复利的伤害远大于同等幅度的收益。亏损50%需要赚100%才能回本。这就是为什么巴菲特将"避免永久性资本损失"置于一切投资原则之首——复利的第一条规则是不要打断复利的进程。</p>
+<p><strong>误区四：以为复利只关乎金钱。</strong> 巴菲特经常提到知识的复利效应——持续学习和积累经验同样遵循复利规律。他11岁开始投资，比大多数人多出了数十年的"知识复利"积累期。</p>
+<div class="quotes-section">
+<h2>巴菲特原话精选</h2>
+<div class="quote-item">
+<div class="quote-text">"收益再投资加上复利的力量产生了奇妙的效果，股东们变得富有。"
+—— <a href="../berkshire/2021-巴菲特致股东信.html" class="wikilink">2021 巴菲特致股东信</a></div>
+</div>
+<div class="quote-item">
+<div class="quote-text">"就这样开始了我们通往2023年的旅程。这是一条颠簸的路，一路上汇聚了几重因素：我们股东<em>持续</em>的储蓄（也就是利润的留存再投资），复利的力量，对<em>重大</em>失误的规避
+—— 以及最重要的——美国顺风。"
+—— <a href="../berkshire/2022-巴菲特致股东信.html" class="wikilink">2022 巴菲特致股东信</a></div>
+</div>
+<div class="quote-item">
+<div class="quote-text">"永远不要冒永久性资本损失的风险。感谢美国的顺风和复利的力量，<em>如果</em>你这一辈子做了几个好决定、避开了严重的错误，我们所处的这个竞技场过去是
+—— 将来也是——回报丰厚的。"
+—— <a href="../berkshire/2023-巴菲特致股东信.html" class="wikilink">2023 巴菲特致股东信</a></div>
+</div>
+<div class="quote-item">
+<div class="quote-text">"以<em>非常</em>微小的方式，伯克希尔股东也参与了这个美国奇迹
+—— 通过放弃分红，选择再投资而非消费。最初，这种再投资规模极小，几乎微不足道，但随着时间推移呈爆发式增长，体现了持续储蓄文化与长期复利魔力的完美结合。"
+—— <a href="../berkshire/2024-巴菲特致股东信.html" class="wikilink">2024 巴菲特致股东信</a></div>
+</div>
+<div class="quote-item">
+<div class="quote-text">"大多数公司习惯把每股收益创新高称为'创纪录'的业绩。但由于企业每年都在不断增加股本基础，所以我们觉得这并没什么值得大书特书的
+—— 比方说，股本增加了10%而每股收益只增长了5%。毕竟，一个完全不动的定期存款账户，靠着复利每年也能稳定产生越来越多的利息收入。"
+—— <a href="../berkshire/1977-巴菲特致股东信.html" class="wikilink">1977 巴菲特致股东信</a></div>
+</div>
+</div><h2>思想演变</h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-era">合伙人时期：复利作为业绩衡量工具 <span class="years">1956-1969年</span></div>
+<div class="timeline-desc">在早期的合伙人信中，巴菲特主要将复利作为业绩统计手段，用累计复合收益率来展示合伙基金相对于道琼斯指数的优势。他在<a href="../partnership/1962年中-巴菲特致合伙人信.html" class="wikilink">1962年中 巴菲特致合伙人信</a>中预判道指的年复合收益率大概在5%到7%之间，展现了对长期复合回报的现实认知。在<a href="../partnership/1963年中-巴菲特致合伙人信.html" class="wikilink">1963年中 巴菲特致合伙人信</a>中，他指出大型机构"从未承诺包括让资金以超越大盘的速度复利增长"，暗示真正的复利增长需要主动管理和非凡的投资能力。</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-era">早期伯克希尔：复利记录的开始与规模隐忧 <span class="years">1970-1989年</span></div>
+<div class="timeline-desc">接手伯克希尔后，巴菲特每年在信的开头报告每股账面价值的年复合增长率。这一数字从1972年的16.5%稳步攀升至1985年的23.2%。但他几乎每年都会附上警告：这个增长率不可能持续。<a href="../berkshire/1982-巴菲特致股东信.html" class="wikilink">1982 巴菲特致股东信</a>中的表述最为经典："几何级数增长终究会被自身的重力所拖慢。"与此同时，<a href="../berkshire/1977-巴菲特致股东信.html" class="wikilink">1977 巴菲特致股东信</a>中关于"定期存款账户的复利"的比喻，首次将复利概念从简单的业绩统计提升到企业价值评估的层面——真正重要的是每股权益的复合增长，而不是总量的增长。</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-era">成熟期：复利增长率的渐进下降 <span class="years">1990-2009年</span></div>
+<div class="timeline-desc">随着伯克希尔体量的急剧膨胀，年复合增长率从23%区间逐步降至20%左右。每年信件的开头数据忠实记录了这一趋势：1994年约23%、2000年23.6%、2008年20.3%。巴菲特坦然接受这一现实，不断调低预期。</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-era">近期：复利的哲学升华 <span class="years">2010-2025年</span></div>
+<div class="timeline-desc">到了晚年，巴菲特将复利从数学概念提升为一种人生哲学和社会力量。他在<a href="../berkshire/2021-巴菲特致股东信.html" class="wikilink">2021 巴菲特致股东信</a>中将伯克希尔的成功归因于"收益再投资加上复利的力量"；在<a href="../berkshire/2022-巴菲特致股东信.html" class="wikilink">2022 巴菲特致股东信</a>中将其与"持续储蓄"和"美国顺风"并列；在<a href="../berkshire/2024-巴菲特致股东信.html" class="wikilink">2024 巴菲特致股东信</a>中更将伯克希尔描述为"持续储蓄文化与长期复利魔力的完美结合"。此时的复利已经超越了投资回报的范畴，成为对资本主义制度、美国社会和个人品格的深刻思考。</div>
+</div>
+</div><h2>相关概念</h2>
+<ul>
+<li><a href="长期持有.html" class="wikilink">长期持有</a> —— 复利的时间条件</li>
+<li><a href="内在价值.html" class="wikilink">内在价值</a> —— 复利增长的衡量标准</li>
+<li><a href="资本配置.html" class="wikilink">资本配置</a> —— 决定复利再投资去向的关键能力</li>
+<li><a href="护城河.html" class="wikilink">护城河</a> —— 确保高回报率可持续的企业特质</li>
+<li><a href="安全边际.html" class="wikilink">安全边际</a> —— 保护复利进程不被永久性损失打断</li>
+</ul>
+<h2>典型案例公司</h2>
+<div class="case-cards">
+<div class="case-card">
+<div class="case-card-title"><a href="../companies/可口可乐.html" class="wikilink">可口可乐</a></div>
+<p>1994年起持有至今，股息从7,500万增至7.04亿美元，市值从13亿增至250亿美元</p>
+</div>
+<div class="case-card">
+<div class="case-card-title"><a href="../companies/美国运通.html" class="wikilink">美国运通</a></div>
+<p>1995年起持有至今，股息从4,100万增至3.02亿美元，市值从13亿增至220亿美元</p>
+</div>
+<div class="case-card">
+<div class="case-card-title"><a href="../companies/盖可保险.html" class="wikilink">盖可保险</a></div>
+<p>从860万美元的收购起步，浮存金增长8,000倍至1,640亿美元</p>
+</div>
+<div class="case-card">
+<div class="case-card-title"><a href="../companies/喜诗糖果.html" class="wikilink">喜诗糖果</a></div>
+<p>用极少的追加资本产生持续的高回报，为巴菲特理解复利的资本效率提供了关键案例</p>
+</div>
+</div>
+<section class="geo-faq" aria-label="常见问题" style="margin-top:32px;padding-top:20px;border-top:2px solid #1A2332">
+<h2 style="font-size:18px;margin:0 0 16px;color:#1A2332">常见问题</h2>
+<dl style="margin:0">
+<dt style="font-weight:700;color:#1A2332;margin:16px 0 4px;font-size:15px">复利是什么？</dt><dd style="margin:0;color:#4A4640;line-height:1.65;font-size:14px">复利（Compounding）：留存收益持续再投资于优质生意而非分红，伯克希尔六十年神话的底层数学；规模终将拖慢复利速度</dd>
+<dt style="font-weight:700;color:#1A2332;margin:16px 0 4px;font-size:15px">巴菲特在哪些信里谈过复利？</dt><dd style="margin:0;color:#4A4640;line-height:1.65;font-size:14px">在 1960 巴菲特致合伙人信、1961 巴菲特致合伙人信、1962 巴菲特致合伙人信、1962年中 巴菲特致合伙人信、1963 巴菲特致合伙人信、1963年中 巴菲特致合伙人信 等 59 处提及。</dd>
+</dl>
+</section>
+</article>
+
+<section class="support-section" id="support-section">
+<div class="support-global">
+<div class="support-text"><span class="support-title">喜欢这个知识库？</span><span class="support-desc">如果巴菲特的智慧对你的投资之路有帮助</span></div>
+
+</div>
+</section>
+<nav class="page-nav"><a href="管理层.html" class="prev"><span class="nav-label">&larr; 上一篇</span><span class="nav-title">管理层</span></a><a href="股息.html" class="next"><span class="nav-label">下一篇 &rarr;</span><span class="nav-title">股息</span></a></nav></div>
+<aside class="backlinks-panel" id="backlinks-panel">
+<div class="bl-panel-header"><h2 class="bl-panel-title">链接到本页 <span class="bl-count">67</span></h2><div class="bl-panel-actions"><button class="bl-action" onclick="document.querySelectorAll('.bl-group').forEach(g=>g.setAttribute('data-open',''))">展开</button><button class="bl-action" onclick="document.querySelectorAll('.bl-group').forEach(g=>g.removeAttribute('data-open'))">折叠</button></div></div>
+<div class="bl-group" data-open>
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1963 巴菲特致合伙人信</span>
+<span class="bl-mention-count">11</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">下表是基于上表数据的累计<mark>复合收益</mark>率：</div>
+<div class="bl-snippet">...|95.9%|74.7%
+1957—60|42.9%|140.6%|107.2%
+1957—61|74.9%|251.0%|181.6%
+1957—62|61.6%|299.8%|215.1%
+1957—63|95.1%|454.5%|311.2%
+年化<mark>复合收益</mark>率|10.0%|27.7%|22.3%</div>
+<div class="bl-snippet bl-more">...还有 9 处提及</div>
+<a href="../partnership/1963-巴菲特致合伙人信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group" data-open>
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1964 巴菲特致合伙人信</span>
+<span class="bl-mention-count">11</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">以下是累计或<mark>复合收益</mark>率：</div>
+<div class="bl-snippet">...0.6%|107.2%
+1957-61|74.9%|251.0%|181.6%
+1957-62|61.6%|299.8%|215.1%
+1957-63|94.9%|454.5%|311.2%
+1957-64|131.3%|608.7%|402.9%
+年化<mark>复合收益</mark>率|11.1%|27.7%|22.3%</div>
+<div class="bl-snippet bl-more">...还有 9 处提及</div>
+<a href="../partnership/1964-巴菲特致合伙人信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group" data-open>
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1962 巴菲特致合伙人信</span>
+<span class="bl-mention-count">9</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">下表为上述三者的累计（复合）收益率及平均年化<mark>复合收益</mark>率：</div>
+<div class="bl-snippet">....9%|55.6%|44.5%
+1957–59|52.3%|95.9%|74.7%
+1957–60|42.9%|140.6%|107.2%
+1957–61|74.9%|251.0%|181.6%
+1957–62|61.6%|299.8%|215.1%
+年化<mark>复合收益</mark>率|8.3%|26.0%|21.1%</div>
+<div class="bl-snippet bl-more">...还有 7 处提及</div>
+<a href="../partnership/1962-巴菲特致合伙人信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1989 巴菲特致股东信</span>
+<span class="bl-mention-count">8</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">1989年我们的净资产增加了15.15亿美元，增幅为44.4%。自现任管理层接手的25年以来，每股账面价值由当初的19.46美元增长到4,296.01美元，年<mark>复合增长</mark>率约为23.8%。</div>
+<div class="bl-snippet">...的账面价值还是19.46美元的时候，其内在价值要更低一些，因为当时的账面价值全部绑在一个纺织业务上，而这个业务的实际价值还不如账上记的那个数。如今我们大部分的业务价值已经远超过账面价值。这种从折价到溢价的令人愉悦的演变，意味着伯克希尔内在价值的<mark>复合增长</mark>率要比账面价值23.8%的年增长率还要再高一些。</div>
+<div class="bl-snippet bl-more">...还有 6 处提及</div>
+<a href="../berkshire/1989-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2007 巴菲特致股东信</span>
+<span class="bl-mention-count">7</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...7.7)
+2004|10.5|10.9|(.4)
+2005|6.4|4.9|1.5
+2006|18.4|15.8|2.6
+2007|11.0|5.5|5.5
+年<mark>复合增长</mark>率 -- 1965-2007|21.1%|10.3%|10.8
+累计总收益 -- 1964-2007|400,863%|6,840%</div>
+<div class="bl-snippet">2007年，公司净资产增加123亿美元，A/B股每股账面价值增长了11%。自现任管理层接手的43年以来，每股账面价值由当初的19美元成长到目前的78,008美元，年<mark>复合增长</mark>率约为21.1%。[^*]</div>
+<div class="bl-snippet bl-more">...还有 5 处提及</div>
+<a href="../berkshire/2007-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2010 巴菲特致股东信</span>
+<span class="bl-mention-count">6</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...7|11.0|5.5|5.5
+2008|(9.6)|(37.0)|27.4
+2009|19.8|26.5|(6.7)
+2010|13.0|15.1|(2.1)
+年<mark>复合增长</mark>率 -- 1965-2010|20.2%|9.4%|10.8
+累计总收益 -- 1964-2010|490,409%|6,262%</div>
+<div class="bl-snippet">2010 年，伯克希尔 A/B 股每股账面价值增长了 13%。自现任管理层接手的 46 年以来，每股账面价值由当初的 19 美元成长到目前的 95,453 美元，年<mark>复合增长</mark>率约为 20.2%。[^*]</div>
+<div class="bl-snippet bl-more">...还有 4 处提及</div>
+<a href="../berkshire/2010-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1961 巴菲特致合伙人信</span>
+<span class="bl-mention-count">4</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">合伙基金如今已满五个整年，以下分别列出逐年与累计（按<mark>复利</mark>计算）的业绩。计算方式与上段相同：扣除费用之后，向合伙人分配或计提分成之前。</div>
+<div class="bl-snippet">按<mark>复利</mark>计算，累计业绩如下：</div>
+<div class="bl-snippet bl-more">...还有 2 处提及</div>
+<a href="../partnership/1961-巴菲特致合伙人信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1995 巴菲特致股东信</span>
+<span class="bl-mention-count">4</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">1995年本公司的净资产增加了53亿美元，增幅为45.0%。由于去年我们以发行股份的方式完成了两项并购，使得流通在外的股份增加了1.3%，因此每股账面价值的增幅略低，为43.1%。自现任管理层接手的31年以来，每股账面价值由当初的19美元成长到如今的14,426美元，年<mark>复合增长</mark>率约为23.6%。</div>
+<div class="bl-snippet">年份|每股有价证券市值|每股税前经营收益（不含投资收益）
+:---|---:|---:
+1965|4美元|4.08美元
+1975|159美元|(6.48)美元
+1985|2,443美元|18.86美元
+1995|22,088美元|258.20美元
+1965-95年<mark>复合增长</mark>率|33.4%|14.7%</div>
+<div class="bl-snippet bl-more">...还有 2 处提及</div>
+<a href="../berkshire/1995-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1996 巴菲特致股东信</span>
+<span class="bl-mention-count">4</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...一些，为31.8%，原因是伯克希尔的流通股数增加了：我们通过发行新股收购了飞安国际公司 (FlightSafety International)，同时还发售了新的B级普通股。[^1] 自现任管理层接手的32年以来，每股账面价值由当初的19美元成长到目前的19,011美元，年<mark>复合增长</mark>率约为23.8%。</div>
+<div class="bl-snippet">...---:
+1965|4 美元|4.08 美元
+1975|159|(6.48)
+1985|2,443|18.86
+1995|22,088|258.20
+1996|28,500|421.39
+ ||
+年<mark>复合增长</mark>率，1965-95|33.4%|14.7%
+单年增长率，1995-96|29.0%|63.2%</div>
+<div class="bl-snippet bl-more">...还有 2 处提及</div>
+<a href="../berkshire/1996-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2005 巴菲特致股东信</span>
+<span class="bl-mention-count">4</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">年份|每股投资金额\*
+---|---:
+1965|$ 4
+1975|159
+1985|2,407
+1995|21,817
+2005|$ 74,129
+1965-2005<mark>复合增长</mark>率|28.0%
+1995-2005复合增长率|13.0%</div>
+<div class="bl-snippet">年份|每股税前收益\*
+---|---:
+1965|$ 4
+1975|4
+1985|52
+1995|175
+2005|$ 2,441
+1965-2005<mark>复合增长</mark>率|17.2%
+1995-2005复合增长率|30.2%</div>
+<div class="bl-snippet bl-more">...还有 2 处提及</div>
+<a href="../berkshire/2005-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2009 巴菲特致股东信</span>
+<span class="bl-mention-count">4</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...006|18.4|15.8|2.6
+2007|11.0|5.5|5.5
+2008|(9.6)|(37.0)|27.4
+2009|19.8|26.5|(6.7)
+年<mark>复合增长</mark>率 -- 1965-2009|20.3%|9.3%|11.0
+累计总收益 -- 1964-2009|434,057%|5,430%</div>
+<div class="bl-snippet">2009年，公司净资产增加218亿美元，A股和B股每股账面价值增长19.8%。自现任管理层接手的45年以来，每股账面价值由当初的19美元增长到目前的84,487美元，年<mark>复合增长</mark>率约为20.3%。[^*]</div>
+<div class="bl-snippet bl-more">...还有 2 处提及</div>
+<a href="../berkshire/2009-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2012 巴菲特致股东信</span>
+<span class="bl-mention-count">4</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...2009|19.8|26.5|(6.7)
+2010|13.0|15.1|(2.1)
+2011|4.6|2.1|2.5
+2012|14.4|16.0|(1.6)
+年<mark>复合增长</mark>率 -- 1965-2012|19.7%|9.4%|10.3
+累计总收益 -- 1964-2012|586,817%|7,433%</div>
+<div class="bl-snippet">2012年，伯克希尔为股东创造了241亿美元的收益。我们动用其中13亿美元回购了自家股票，因此公司当年净资产增加了228亿美元。A股和B股的每股账面价值均增长了14.4%。在过去48年间（即自现任管理层接手以来），每股账面价值从19美元增长到114,214美元，年<mark>复合增长</mark>率为19.7%。[^*]</div>
+<div class="bl-snippet bl-more">...还有 2 处提及</div>
+<a href="../berkshire/2012-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2015 巴菲特致股东信</span>
+<span class="bl-mention-count">4</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">....4|16.8|16.0
+2013|18.2|32.7|32.4
+2014|8.3|27.0|13.7
+2015|6.4|(12.5)|1.4
+年<mark>复合增长</mark>率 -- 1965-2015|19.2%|20.8%|9.7%
+累计总收益 -- 1964-2015|798,981%|1,598,284%|11...</div>
+<div class="bl-snippet">2015年伯克希尔的净资产增长了154亿美元，A/B股每股账面价值增长6.4%。自现任管理层接手的51年以来，每股账面价值已从19美元增长至155,501美元，年<mark>复合增长</mark>率约为19.2%。[^*]</div>
+<div class="bl-snippet bl-more">...还有 2 处提及</div>
+<a href="../berkshire/2015-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2019 巴菲特致股东信</span>
+<span class="bl-mention-count">4</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...13.7
+2015|(12.5)|1.4
+2016|23.4|12.0
+2017|21.9|21.8
+2018|2.8|(4.4)
+2019|11.0|31.5
+年<mark>复合增长</mark>率 -- 1965-2019|20.3%|10.0%
+累计总收益 -- 1964-2019|2,744,062%|19,784%</div>
+<div class="bl-snippet">...常而言，管理良好的工业公司不会将其全部利润都分配给股东。至少在年景好的时候——即使不是每年如此——它们会保留一部分利润并将其投回业务之中。于是，一种<mark>复利</mark>效应（凯恩斯原文斜体）便在健全的工业投资中发挥着作用。经年累月，一家稳健工业企业资产的真实价值，在向股东派发的股息之外，还在以复利的方式不断增长。&quot;</div>
+<div class="bl-snippet bl-more">...还有 2 处提及</div>
+<a href="../berkshire/2019-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">税收效率</span>
+<span class="bl-mention-count">3</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">税收效率是巴菲特投资策略中一个被低估却极为关键的维度。他从不逃税——恰恰相反，伯克希尔是全美最大的纳税人之一——但他深谙如何在合法框架内让<mark>复利</mark>效应最大化。其核心洞见是：递延纳税等于获得了政府的无息贷款。</div>
+<div class="bl-snippet">早期认知（1956-1980）：巴菲特合伙基金时期已意识到税收摩擦对<mark>复利</mark>的侵蚀。1980 巴菲特致股东信讨论了高通胀下的隐性税收问题——通胀本身就是对资本的额外征税。</div>
+<div class="bl-snippet bl-more">...还有 1 处提及</div>
+<a href="税收效率.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">长期持有</span>
+<span class="bl-mention-count">3</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...是一种&quot;买低卖高&quot;的周转策略。但随着巴菲特的投资生涯不断发展，尤其是受到查理·芒格的影响，他逐渐认识到，真正卓越的企业值得永久持有，因为它们能以高回报率持续再投资收益，产生<mark>复利</mark>效应。这一转变从巴菲特买入喜诗糖果（1972年）和华盛顿邮报（1973年）开始萌芽，到1988年买入可口可乐时已经完全成熟。</div>
+<div class="bl-snippet">误区四：忽视持有的隐性成本。 长期持有有一个经常被忽略的好处：税务递延。在美国税制下，未实现的资本利得不需要纳税。巴菲特在2018 巴菲特致股东信中提到：&quot;我们很可能会长期持有其中大部分股票。不过归根结底，卖出时实现的收益将按照当时的税率纳税。&quot;延迟纳税本身就是一种<mark>复利</mark>优势。</div>
+<div class="bl-snippet bl-more">...还有 1 处提及</div>
+<a href="长期持有.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1963年中 巴菲特致合伙人信</span>
+<span class="bl-mention-count">3</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...跟上这只无人主动管理的蓝筹股指数。我这样说并非要批评这些机构，也不是批评那些方法和逻辑与大基金大体相似的投资顾问和信托部门。这些投资渠道为数以百万计的投资者提供了切实的服务——充分分散风险、省心方便、规避劣质股票等等。但它们的服务不包括（绝大多数情况下也从未承诺包括）让资金以超越大盘的速度<mark>复利</mark>增长。</div>
+<div class="bl-snippet">我们合伙基金存在的根本意义，就是与上述投资渠道相比，在承担较低长期本金损失风险的前提下，实现更高的<mark>复利</mark>增长速度。我们无法保证一定能做到这一点。我们能承诺、也确实承诺的是：在排除漫长投机狂潮的前提下，如果在足够长的时间内我们仍然做不到这一点，我们就清盘。</div>
+<div class="bl-snippet bl-more">...还有 1 处提及</div>
+<a href="../partnership/1963年中-巴菲特致合伙人信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1979 巴菲特致股东信</span>
+<span class="bl-mention-count">3</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...的最后一个财政年度末），伯克希尔每股账面价值为19.46美元。截至1979年底，以股票投资按市值计算的每股账面价值为335.85美元。账面价值的年<mark>复合增长</mark>率达到20.5%。这个数字当然远高于我们历年经营收益率的平均数，它凸显了保险子公司股票投资的资本增值对股东整体回报的重要性。坦白说，1964年所报...</div>
+<div class="bl-snippet">但在我们陶醉于自我祝贺的海洋之前，有一个更重要——也更关键——的观察必须指出。几年前，一家每股账面价值以20%年<mark>复合增长</mark>的企业，几乎可以保证其股东获得相当丰厚的实际投资回报。但如今，这样的结果似乎不再那么确定了。因为通货膨胀率，加上股东将年度收益从公司转入自己口袋时必须缴纳的个人所得税率，才是最终决...</div>
+<div class="bl-snippet bl-more">...还有 1 处提及</div>
+<a href="../berkshire/1979-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1999 巴菲特致股东信</span>
+<span class="bl-mention-count">3</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">1999年，伯克希尔 (Berkshire) 的净资产增加了3.58亿美元，A/B股每股账面价值增长了0.5%。自现任管理层接手的35年以来，每股账面价值由当初的19美元成长到目前的37,987美元，年<mark>复合增长</mark>率约为24.0%。[^1]</div>
+<div class="bl-snippet">十年期|每股投资规模|税前每股经营收益
+---|---:|---:
+1979|29.0%|11.5%
+1989|28.7%|23.6%
+1999|20.7%|不适用
+1969-1999年<mark>复合增长</mark>率|25.4%|不适用</div>
+<div class="bl-snippet bl-more">...还有 1 处提及</div>
+<a href="../berkshire/1999-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2003 巴菲特致股东信</span>
+<span class="bl-mention-count">3</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...00|6.5|(9.1)|15.6
+2001|(6.2)|(11.9)|5.7
+2002|10.0|(22.1)|32.1
+2003|21.0|28.7|(7.7)
+年<mark>复合增长</mark>率 -- 1965-2003|22.2|10.4|11.8
+累计总收益 -- 1964-2003|259,485|4,743</div>
+<div class="bl-snippet">2003年公司净资产增加了136亿美元，A股和B股每股账面价值增长了21%。自现任管理层接手的39年以来，每股账面价值由当初的19美元成长到目前的50,498美元，年<mark>复合增长</mark>率约为22.2%。[^*]</div>
+<div class="bl-snippet bl-more">...还有 1 处提及</div>
+<a href="../berkshire/2003-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2006 巴菲特致股东信</span>
+<span class="bl-mention-count">3</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...|32.1
+2003|21.0|28.7|(7.7)
+2004|10.5|10.9|(.4)
+2005|6.4|4.9|1.5
+2006|18.4|15.8|2.6
+年<mark>复合增长</mark>率——1965-2006|21.4%|10.4%|11.0
+累计总收益——1964-2006|361,156%|6,479%</div>
+<div class="bl-snippet">2006年，公司净资产增加169亿美元，A股和B股每股账面价值均增长18.4%。自现任管理层接手的42年以来，每股账面价值由当初的19美元成长到目前的70,281美元，年<mark>复合增长</mark>率约为21.4%。[^*]</div>
+<div class="bl-snippet bl-more">...还有 1 处提及</div>
+<a href="../berkshire/2006-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2008 巴菲特致股东信</span>
+<span class="bl-mention-count">3</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...4)
+2005|6.4|4.9|1.5
+2006|18.4|15.8|2.6
+2007|11.0|5.5|5.5
+2008|(9.6)|(37.0)|27.4
+年<mark>复合增长</mark>率 -- 1965-2008|20.3%|8.9%|11.4
+累计总收益 -- 1964-2008|362,319%|4,276%</div>
+<div class="bl-snippet">2008年，公司净资产减少了115亿美元，A股和B股的每股账面价值下降了9.6%。自现任管理层接手的44年以来，每股账面价值由当初的19美元增长到目前的70,530美元，年<mark>复合增长</mark>率约为20.3%。[^*]</div>
+<div class="bl-snippet bl-more">...还有 1 处提及</div>
+<a href="../berkshire/2008-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2011 巴菲特致股东信</span>
+<span class="bl-mention-count">3</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...|(9.6)|(37.0)|27.4
+2009|19.8|26.5|(6.7)
+2010|13.0|15.1|(2.1)
+2011|4.6|2.1|2.5
+年<mark>复合增长</mark>率 -- 1965-2011|19.8%|9.2%|10.6
+累计总收益 -- 1964-2011|513,055%|6,397%|-</div>
+<div class="bl-snippet">2011年，我们A股和B股的每股账面价值都增长了4.6%。自现任管理层接手的47年以来，每股账面价值从19美元增长到99,860美元，年<mark>复合增长</mark>率为19.8%。[^*]</div>
+<div class="bl-snippet bl-more">...还有 1 处提及</div>
+<a href="../berkshire/2011-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2013 巴菲特致股东信</span>
+<span class="bl-mention-count">3</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...010|13.0|15.1|(2.1)
+2011|4.6|2.1|2.5
+2012|14.4|16.0|(1.6)
+2013|18.2|32.4|(14.2)
+年<mark>复合增长</mark>率 -- 1965-2013|19.7%|9.8%|9.9
+累计总收益 -- 1964-2013|693,518%|9,841%|</div>
+<div class="bl-snippet">...济意义上毫无意义，后文我会解释——它们源于我们收购马蒙集团 (Marmon) 和伊斯卡 (Iscar) 少数股权。扣除这些费用后，A股和B股的每股账面价值增长了18.2%。过去49年里（也就是自现任管理层接手以来），每股账面价值从19美元增长到了134,973美元，年<mark>复合增长</mark>率为19.7%。[^*]</div>
+<div class="bl-snippet bl-more">...还有 1 处提及</div>
+<a href="../berkshire/2013-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2014 巴菲特致股东信</span>
+<span class="bl-mention-count">3</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">....6|(4.7)|2.1
+2012|14.4|16.8|16.0
+2013|18.2|32.7|32.4
+2014|8.3|27.0|13.7
+年<mark>复合增长</mark>率——1965-2014|19.4%|21.6%|9.9%
+累计总收益——1964-2014|751,113%|1,826,163%|11,196...</div>
+<div class="bl-snippet">2014年，伯克希尔的净资产增加了183亿美元，A/B股每股账面价值增长8.3%。自现任管理层接手的50年来，每股账面价值已从19美元增长至146,186美元，年<mark>复合增长</mark>率约为19.4%。[^*]</div>
+<div class="bl-snippet bl-more">...还有 1 处提及</div>
+<a href="../berkshire/2014-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2016 巴菲特致股东信</span>
+<span class="bl-mention-count">3</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">....2|32.7|32.4
+2014|8.3|27.0|13.7
+2015|6.4|(12.5)|1.4
+2016|10.7|23.4|12.0
+年<mark>复合增长</mark>率——1965-2016|19.0%|20.8%|9.7%
+累计总收益——1964-2016|884,319%|1,972,595%|12,717...</div>
+<div class="bl-snippet">2016年伯克希尔的净资产增加了275亿美元，A股和B股的每股账面价值增长了10.7%。[^*]自现任管理层接手的52年以来，每股账面价值已从19美元增长至172,108美元，年<mark>复合增长</mark>率约为19%。</div>
+<div class="bl-snippet bl-more">...还有 1 处提及</div>
+<a href="../berkshire/2016-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2017 巴菲特致股东信</span>
+<span class="bl-mention-count">3</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...3|27.0|13.7
+2015|6.4|(12.5)|1.4
+2016|10.7|23.4|12.0
+2017|23.0|21.9|21.8
+年<mark>复合增长</mark>率——1965至2017年|19.1%|20.9%|9.9%
+累计总收益——1964至2017年|1,088,029%|2,404,748%|15...</div>
+<div class="bl-snippet">2017年伯克希尔的净资产增加了653亿美元，A/B股每股账面价值增长了23%。自现任管理层接手的53年以来，每股账面价值已从19美元增至211,750美元，年<mark>复合增长</mark>率约为19.1%。[^*]</div>
+<div class="bl-snippet bl-more">...还有 1 处提及</div>
+<a href="../berkshire/2017-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1964年中 巴菲特致合伙人信</span>
+<span class="bl-mention-count">2</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...
+1961|22.4%|45.9%|35.9%
+1962|-7.6%|13.9%|11.9%
+1963|20.6%|38.7%|30.5%
+1964 年上半年|10.9%|12.0%|10.5%
+累计收益率|116.1%|521.0%|354.4%
+年化<mark>复合收益</mark>率|10.8%|27.6%|22.2%</div>
+<div class="bl-snippet">...%|18.3%|20.6%|30.5%
+1964 年上半年|11.0%|9.5%|9.6%|8.6%|10.9%|10.5%
+累计收益率|105.8%|95.5%|98.2%|105.1%|116.1%|354.4%
+年化<mark>复合收益</mark>率|10.1%|9.4%|9.6%|10.1%|10.8%|22.2%</div>
+<a href="../partnership/1964年中-巴菲特致合伙人信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1985 巴菲特致股东信</span>
+<span class="bl-mention-count">2</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">去年伯克希尔的净资产增加了6.136亿美元，增幅达48.2%。哈雷彗星恰好在这一年造访，倒也十分应景：这两件事在我有生之年都不会再见到了。自现任管理层接手的21年以来，每股账面价值由19.46美元增长到1,643.71美元，年<mark>复合增长</mark>率约为23.2%——这又是一个不可能再重现的数字。</div>
+<div class="bl-snippet">...资本来赚更多钱算不上什么了不起的管理成就。你坐在摇椅上也能做到这一点——只要把存进银行的资金翻两番，利息收入也会翻两番。没有人会为这种&quot;成就&quot;而欢呼。然而，每当某位CEO退休时，大家照例高唱赞歌，说他在任期内将公司利润提高了好几倍——却没有人去看看这种增长是不是仅仅来自多年的留存收益加上<mark>复利</mark>的作用。</div>
+<a href="../berkshire/1985-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1988 巴菲特致股东信</span>
+<span class="bl-mention-count">2</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">1988年，伯克希尔的净资产增加了5.69亿美元，增幅为20.0%。自现任管理层接手的24年以来，每股账面价值从19.46美元增长到2,974.52美元，年<mark>复合增长</mark>率约为23.0%。</div>
+<div class="bl-snippet">...，但还有一个额外的利好：1978年，美国政府征收了阿卡塔10,700英亩的林地——主要是原始红木林——以扩建红木国家公园。政府分批支付了9,790万美元的征收款，但阿卡塔认为这个金额远远不够。双方还就征收到最终付款期间应适用的利率产生争议。征收法律规定为6%的单利；阿卡塔则主张适用高得多的<mark>复利</mark>利率。</div>
+<a href="../berkshire/1988-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1993 巴菲特致股东信</span>
+<span class="bl-mention-count">2</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">1993年，我们的每股账面价值增长了14.3%。自现任管理层接手的29年以来，每股账面价值由当初的19美元成长到目前的8,854美元，年<mark>复合增长</mark>率约为23.3%。</div>
+<div class="bl-snippet">这个小故事告诉我们：对于需要纳税的投资人来说，在同样的回报率下，一笔内部持续<mark>复利</mark>增长的投资（最后才纳税），其最终回报将远远超过一系列以相同回报率滚动的投资（每次都纳税）。不过我怀疑，很多伯克希尔的股东早就明白这个道理了。</div>
+<a href="../berkshire/1993-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1994 巴菲特致股东信</span>
+<span class="bl-mention-count">2</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">1994年本公司的净资产增加了14.5亿美元，即增长13.9%。自现任管理层接手的30年以来，每股账面价值由当初的19美元成长到目前的10,083美元，年<mark>复合增长</mark>率约为23%。</div>
+<div class="bl-snippet">...就是典型的员工期权计划——期权的行权价格并不会定期上调，以反映留存收益正在持续增加公司的财富这一事实。事实上，一份十年期的期权，加上低分红率，再加上<mark>复利</mark>效应，可以让一个在岗位上只是原地踏步的经理人获得丰厚的回报。计较一点的人甚至会发现，支付给股东的股利越少，持有期权的经理人获利就越多。到目前为止，在...</div>
+<a href="../berkshire/1994-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1997 巴菲特致股东信</span>
+<span class="bl-mention-count">2</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">1997年，伯克希尔的净资产增加了80亿美元，A股和B股的每股账面价值均增长了34.1%。自现任管理层接手的33年以来，每股账面价值由当初的19美元成长到目前的25,488美元，年<mark>复合增长</mark>率约为24.1%。[^1]</div>
+<div class="bl-snippet">十年期|每股投资金额|税前每股经营收益
+---|---:|---:
+1977|24.6%|27.6%
+1987|26.5%|24.1%
+1997|25.5%|20.8%
+1967-1997年<mark>复合增长</mark>率|25.6%|24.2%</div>
+<a href="../berkshire/1997-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1998 巴菲特致股东信</span>
+<span class="bl-mention-count">2</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">1998年伯克希尔的账面价值增加了259亿美元，A股和B股的每股账面价值增长了48.3%。自现任管理层接手的34年以来，每股账面价值从19美元增长到了37,801美元，年<mark>复合增长</mark>率约为24.7%。[^1]</div>
+<div class="bl-snippet">浮存金25.4%的年化<mark>复合增长</mark>率固然令人印象深刻，但真正重要的是这些浮存金的获取成本。如果成本过高，浮存金的增长就会变成一种诅咒而非祝福。</div>
+<a href="../berkshire/1998-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2000 巴菲特致股东信</span>
+<span class="bl-mention-count">2</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...97|34.1|33.4|.7
+1998|48.3|28.6|19.7
+1999|.5|21.0|(20.5)
+2000|6.5|(9.1)|15.6
+1965-2000年均<mark>复合增长</mark>率|23.6%|11.8%|11.8%
+1964-2000累计总收益|207,821%|5,383%|202,438%</div>
+<div class="bl-snippet">2000年，伯克希尔的净资产增加了39.6亿美元，A股和B股的每股账面价值增长了6.5%。自现任管理层接手的36年以来，每股账面价值由当初的19美元增长到目前的40,442美元，年<mark>复合增长</mark>率约为23.6%。[^*]</div>
+<a href="../berkshire/2000-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2002 巴菲特致股东信</span>
+<span class="bl-mention-count">2</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...999|.5|21.0|(20.5)
+2000|6.5|(9.1)|15.6
+2001|(6.2)|(11.9)|5.7
+2002|10.0|(22.1)|32.1
+年<mark>复合增长</mark>率 -- 1965-2002|22.2|10.0|12.2
+累计总收益 -- 1964-2002|214,433|3,663</div>
+<div class="bl-snippet">2002年，公司的净资产增加了61亿美元，A/B股每股账面价值增长10.0%。自现任管理层接手的38年以来，每股账面价值由当初的19美元增长到现在的41,727美元，年<mark>复合增长</mark>率为22.2%。[^*]</div>
+<a href="../berkshire/2002-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2004 巴菲特致股东信</span>
+<span class="bl-mention-count">2</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...5.6
+2001|(6.2)|(11.9)|5.7
+2002|10.0|(22.1)|32.1
+2003|21.0|28.7|(7.7)
+2004|10.5|10.9|(.4)
+1965-2004年年<mark>复合增长</mark>率|21.9|10.4|11.5
+1964-2004年累计总收益|286,865|5,318</div>
+<div class="bl-snippet">2004年，公司净资产增加了83亿美元，A/B股每股账面价值增长10.5%。自现任管理层接手的40年以来，每股账面价值由当初的19美元成长到目前的55,824美元，年<mark>复合增长</mark>率约为21.9%。[^*]</div>
+<a href="../berkshire/2004-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2018 巴菲特致股东信</span>
+<span class="bl-mention-count">2</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...4|(12.5)|1.4
+2016|10.7|23.4|12.0
+2017|23.0|21.9|21.8
+2018|0.4|2.8|(4.4)
+年<mark>复合增长</mark>率——1965-2018|18.7%|20.5%|9.7%
+累计总收益——1964-2018|1,091,899%|2,472,627%|15,0...</div>
+<div class="bl-snippet">我们的权益资本就是另一回事了：伯克希尔的3490亿美元在美国企业界无人能及。通过长期保留所有收益，并让<mark>复利</mark>发挥它的魔力，我们积累了资金，使我们得以购买和发展前面描述的那些宝贵资产。如果我们当初选择100%分红的政策，我们手头就只有1965财年开始时的那2200万美元了。</div>
+<a href="../berkshire/2018-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2023 巴菲特致股东信</span>
+<span class="bl-mention-count">2</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">伯克希尔有一条投资准则，过去没有变，将来也不会变：永远不要冒永久性资本损失的风险。感谢美国的顺风和<mark>复利</mark>的力量，如果你这一辈子做了几个好决定、避开了严重的错误，我们所处的这个竞技场过去是——将来也是——回报丰厚的。</div>
+<div class="bl-snippet">...2.8|(4.4)
+2019|11.0|31.5
+2020|2.4|18.4
+2021|29.6|28.7
+2022|4.0|(18.1)
+2023|15.8|26.3
+年<mark>复合增长</mark>率（1965-2023）|19.8%|10.2%
+累计总收益（1964-2023）|4,384,748%|31,223%</div>
+<a href="../berkshire/2023-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">保险浮存金</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">资本配置 — 浮存金是伯克希尔资本配置的核心资金来源
+内在价值 — 浮存金是伯克希尔内在价值与账面价值差距的重要来源
+<mark>复利</mark> — 零成本浮存金的长期投资回报体现了复利的力量
+承保纪律 — 浮存金的成本取决于承保纪律的严格程度</div>
+<a href="保险浮存金.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">股息</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">留存收益 — 股息的对立面，巴菲特更看重留存收益的<mark>复利</mark>效应
+资本配置 — 股息决策是资本配置的重要组成部分
+回购 — 伯克希尔在不分红的同时，用回购作为返还资本的替代方式
+复利 — 不分红的核心逻辑是让复利在公司层面发挥最大威力</div>
+<a href="股息.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">核心思想索引</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet"><mark>复利</mark>（Compounding）— 出现于 60 篇信件
+低估（Undervalued）— 出现于 54 篇信件
+内在价值（Intrinsic Value）— 出现于 51 篇信件
+买入价格（Purchase Price）— 出现于 30 篇信件
+长期持有（Buy and Hold）— 出现于 19 ...</div>
+<a href="../index-pages/核心思想索引.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">留存收益</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">资本配置 — 留存收益的运用方式是资本配置的核心问题
+<mark>复利</mark> — 留存收益的长期价值通过复利效应实现
+回购 — 留存收益的重要运用途径之一
+透视盈余 — 揭示被投资公司留存收益中属于伯克希尔的隐性价值
+内在价值 — 留存收益是否创造价值的最终衡量标准是内在价值的变化</div>
+<a href="留存收益.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">穆迪</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">穆迪案例还体现了长期持有的力量。尽管经历了金融危机的冲击和监管风暴，巴菲特始终没有放弃这家公司的核心仓位。4.99亿美元的成本带来的是持续二十余年的超额回报，这正是<mark>复利</mark>效应在优质企业上的展现。</div>
+<a href="../companies/穆迪.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">债券</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">通货膨胀 — 债券投资者最大的长期威胁，侵蚀固定收益的实际购买力
+<mark>复利</mark> — 折价债券的收益率计算依赖复利数学
+安全边际 — 以大幅折价买入债券是安全边际原则在固定收益领域的应用
+杠杆 — 债券市场中的杠杆（如垃圾债券融资的LBO）是系统性风险的来源
+资本配置 — 债券投资是保险公司五大资本配置方向之...</div>
+<a href="债券.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1960 巴菲特致合伙人信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">按<mark>复利</mark>计算，四年累计业绩如下：</div>
+<a href="../partnership/1960-巴菲特致合伙人信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1962年中 巴菲特致合伙人信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...会跌差不多的幅度，其余大多数年份则夹在中间。哪年涨、哪年跌，我毫无头绪，长期投资者也不必太在意。
+放眼足够长的时间，我认为道指含股息和市值增长的年<mark>复合收益</mark>率大概在5%到7%之间。这几年大市涨得不少，但要是期望大市长期能超过这个水平，恐怕要失望了。
+我们的工作是年复一年积累相对道指的超额收益，不必太纠...</div>
+<a href="../partnership/1962年中-巴菲特致合伙人信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1970年2月 巴菲特致合伙人信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...票面利率为7％、期限为19年的债券；另一个是买入票面利率为5％、价格为791.60美元、19年后支付给你1,000.00 美元的债券。每半年计算一次<mark>复利</mark>，买这两只债券都恰好可以实现7％的收益率。从数学计算上来看，这两只债券没差别。如果买的是免税债券，就有些复杂了。70.00美元的利息是完全免税的。折...</div>
+<a href="../partnership/1970年2月-巴菲特致合伙人信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1972 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...64财年末，伯克希尔的股东权益合计22,138,753美元。自那以后，我们没有向外部引入任何新增股权资本，无论是现金增发还是通过并购。恰恰相反，我们还回购了一部分股票，使流通股数减少了14%。每股账面价值从1964财年末的19.46美元增长至1972年末的69.72美元，年<mark>复合增长</mark>率约为16.5%。</div>
+<a href="../berkshire/1972-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1975 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...产已增至9290万美元，折合每股94.92美元。我们通过与私人股东协商，以现金（或现金加票据）的方式，全部或几近全部地收购了六家企业；另外自行创办了四家业务；购入了一家大型联营企业31.5%的股权；同时将伯克希尔·哈撒韦的流通股数减少至979,569股。总体而言，每股权益的年<mark>复合增长</mark>率略高于15%。</div>
+<a href="../berkshire/1975-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1977 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">大多数公司习惯把每股收益创新高称为&quot;创纪录&quot;的业绩。但由于企业每年都在不断增加股本基础，所以我们觉得这并没什么值得大书特书的——比方说，股本增加了10%而每股收益只增长了5%。毕竟，一个完全不动的定期存款账户，靠着<mark>复利</mark>每年也能稳定产生越来越多的利息收入。</div>
+<a href="../berkshire/1977-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1978 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...去三年——基本上是保险行业的黄金时期，而保险是我们最大的利润来源——伯克希尔的每股净资产几乎翻了一番，通过良好的经营收益加上相当可观的资本利得，年<mark>复合增长</mark>率约为 25%。但无论是这个来自所有渠道的 25% 权益增长率，还是 1978 年经营收益带来的 19.4% 权益增长率，都不可持续。保险行业的景...</div>
+<a href="../berkshire/1978-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1980 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">自现任管理层接掌伯克希尔的16年以来，每股账面价值（其中保险业务的股权投资以市价计算）已从19.46美元增长至400.80美元，年<mark>复合增长</mark>率为20.5%。（实际上你做得更好：过去十年里人体内所含矿物质成分的价值以年复合22%的速度增长。）更令人欣慰的是，我们取得这一成绩的过程中犯了不少错误。错误清单...</div>
+<a href="../berkshire/1980-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1981 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">按GAAP口径，现任管理层接手的十七年间，每股账面价值从19.46美元增长到526.02美元，年<mark>复合增长</mark>率约为21.1%。这个回报率未来极有可能逐步下滑。但我们希望，它至少能显著高于美国大型企业的平均回报水平。</div>
+<a href="../berkshire/1981-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1982 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">在现任管理层的18年任期内，每股账面价值从19.46美元增长到了737.43美元，年<mark>复合增长</mark>率为22.0%。可以肯定的是，这个比率未来必将下降。几何级数增长终究会被自身的重力所拖慢。</div>
+<a href="../berkshire/1982-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1983 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">现任管理层19年任期内，账面价值从每股19.46美元增长到975.83美元，年<mark>复合增长</mark>率约22.6%。考虑到我们目前的规模，这样的回报率是不可能持续的。不信的人适合去做销售，但千万别去搞数学。</div>
+<a href="../berkshire/1983-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1984 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...资产增加了1.526亿美元，每股约增长133美元。这个数字听起来还不错，但实际上只能算中等水平。经济收益必须与产生它的资本相比较来评估。过去二十年来，我们每股账面价值的年<mark>复合增长</mark>率为22.1%（从1964年的19.46美元增长到1984年的1,108.77美元），但1984年的增长率只有13.6%。</div>
+<a href="../berkshire/1984-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1986 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">1986年本公司的净资产增加了4.925亿美元，增幅为26.1%。自现任管理层接手的22年以来，每股账面价值由19.46美元增长到2,073.06美元，年<mark>复合增长</mark>率为23.3%。在计算每股账面价值时，分子与分母同样重要：过去22年间，公司净资产增长了106倍，而流通在外的股份却增加不到1%。</div>
+<a href="../berkshire/1986-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1987 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">1987年，我们的净资产增加了4.64亿美元，增幅为19.5%。自现任管理层接手的23年以来，每股账面价值由19.46美元增长到2,477.47美元，年<mark>复合增长</mark>率约为23.1%。</div>
+<a href="../berkshire/1987-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1990 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...乎可以确定会减少。&quot;在1990年下半年的大部分时间里，我们眼看就要迅速验证这一预测的准确性了。好在年末股票价格有所回升，使我们最终在1990年净资产增加了3.62亿美元，增幅为7.3%。自现任管理层接手的26年以来，每股账面价值从19.46美元增长到4,612.06美元，年<mark>复合增长</mark>率约为23.2%。</div>
+<a href="../berkshire/1990-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1991 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">1991年我们的净资产增加了21亿美元，增幅为39.6%。自现任管理层接手的27年以来，每股账面价值由当初的19美元成长到目前的6,437美元，年<mark>复合增长</mark>率约为23.7%。</div>
+<a href="../berkshire/1991-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">1992 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">1992年我们的每股账面价值增长了20.3%。自现任管理层接手的28年以来，每股账面价值由当初的19美元成长到目前的7,745美元，年<mark>复合增长</mark>率约为23.6%。</div>
+<a href="../berkshire/1992-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2001 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">2001年伯克希尔的净资产减少了37.7亿美元，A/B股每股账面价值下降6.2%。自现任管理层接手的37年以来，每股账面价值由当初的19美元成长到目前的37,920美元，年<mark>复合增长</mark>率约为22.6%。[^*]</div>
+<a href="../berkshire/2001-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2020 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">...5)|1.4
+2016|23.4|12.0
+2017|21.9|21.8
+2018|2.8|(4.4)
+2019|11.0|31.5
+2020|2.4|18.4
+年<mark>复合增长</mark>率 -- 1965-2020|20.0%|10.2%
+累计总收益 -- 1964-2020|2,810,526%|23,454%</div>
+<a href="../berkshire/2020-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2021 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">1965年初，一切开始改变。伯克希尔迎来了新的管理层，重新配置了可用资金，基本上把所有收益都投入到了各种好生意中，其中大部分在此后多年一直保持优秀。收益再投资加上<mark>复利</mark>的力量产生了奇妙的效果，股东们变得富有。</div>
+<a href="../berkshire/2021-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2022 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">就这样开始了我们通往2023年的旅程。这是一条颠簸的路，一路上汇聚了几重因素：我们股东持续的储蓄（也就是利润的留存再投资），<mark>复利</mark>的力量，对重大失误的规避——以及最重要的——美国顺风。没有伯克希尔，美国照样行；反过来可不成。</div>
+<a href="../berkshire/2022-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+<div class="bl-group">
+<button class="bl-group-header" onclick="this.parentElement.toggleAttribute('data-open')">
+<span class="bl-caret"></span>
+<span class="bl-source-name">2024 巴菲特致股东信</span>
+<span class="bl-mention-count">1</span>
+</button>
+<div class="bl-snippets">
+<div class="bl-snippet">以非常微小的方式，伯克希尔股东也参与了这个美国奇迹——通过放弃分红，选择再投资而非消费。最初，这种再投资规模极小，几乎微不足道，但随着时间推移呈爆发式增长，体现了持续储蓄文化与长期<mark>复利</mark>魔力的完美结合。</div>
+<a href="../berkshire/2024-巴菲特致股东信.html" class="bl-go-link">查看原文 →</a>
+</div>
+</div>
+</aside>
+</main>
+<script src="../nav.js"></script>
+<script src="../search.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"257063c5736c46be8a7c5c8c01061587","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

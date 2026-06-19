@@ -1,0 +1,43 @@
+User-agent: *
+Allow: /
+Disallow: /stats
+Disallow: /stats/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /search-index.json
+Disallow: /functions/
+
+# 百度爬虫
+User-agent: Baiduspider
+Allow: /
+Disallow: /stats
+Disallow: /admin/
+Disallow: /api/
+Disallow: /search-index.json
+Crawl-delay: 1
+
+# 生成式 AI / 答案引擎爬虫 — 显式欢迎抓取与引用（GEO）
+# OpenAI（含 ChatGPT 搜索）/ Anthropic / Perplexity / Google Gemini / Apple / 字节 / Amazon / Meta / Common Crawl / Cohere
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bytespider
+User-agent: Amazonbot
+User-agent: Meta-ExternalAgent
+User-agent: CCBot
+User-agent: cohere-ai
+Allow: /
+Disallow: /stats
+Disallow: /admin/
+Disallow: /api/
+Disallow: /search-index.json
+Disallow: /functions/
+
+Sitemap: https://learnbuffett.com/sitemap.xml
+Host: https://learnbuffett.com
