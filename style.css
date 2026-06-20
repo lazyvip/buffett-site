@@ -528,9 +528,16 @@ font-family:var(--font);font-weight:700;box-shadow:0 4px 12px rgba(22,24,26,.15)
 .person-name{font-family:var(--font);font-size:15px;font-weight:700;color:var(--sidebar-bg);margin-bottom:4px}
 .person-refs{font-size:12px;color:var(--text2)}
 
-.gold-divider{display:flex;align-items:center;gap:16px;margin:40px 0}
+.gold-divider{display:flex;align-items:center;gap:16px;margin:40px 0 20px}
 .gold-divider::before,.gold-divider::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,var(--border),transparent)}
 .gold-divider-diamond{width:8px;height:8px;background:var(--accent);transform:rotate(45deg);flex-shrink:0}
+
+.site-footer{max-width:820px;margin:0 auto 30px;padding:16px 0;text-align:center;font-size:12px;color:var(--text2);line-height:1.8}
+.site-footer a{color:var(--accent);text-decoration:none}
+.site-footer a:hover{text-decoration:underline}
+.footer-credit{margin:0 0 4px}
+.footer-disclaimer{margin:0 0 4px;opacity:.8}
+.footer-contact{margin:0;opacity:.7}
 
 .changelog-hint{text-align:center;font-size:13px;color:var(--text2);margin-top:32px;
 padding:16px;border:1px dashed var(--border);border-radius:4px;background:var(--accent-bg)}
