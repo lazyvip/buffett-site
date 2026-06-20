@@ -43,7 +43,8 @@ var _hmt = _hmt || [];
 </script>
 </head>
 <body>
-<button class="hamburger" onclick="document.getElementById('sidebar').classList.toggle('open')">☰</button>
+<button class="hamburger" onclick="document.getElementById('sidebar').classList.toggle('open');document.getElementById('sidebar-overlay').classList.toggle('active')">☰</button>
+<div class="sidebar-overlay" id="sidebar-overlay" onclick="document.getElementById('sidebar').classList.remove('open');this.classList.remove('active')"></div>
 <aside class="sidebar" id="sidebar">
 <div class="sidebar-header"><a href="../index.html" class="logo"><img src="../assets/logo.png" class="logo-icon" alt="读懂巴菲特 logo" width="32" height="32"><span>读懂巴菲特</span></a></div>
 <div class="sidebar-nav">
