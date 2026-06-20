@@ -55,11 +55,20 @@ background:rgba(255,255,255,.9);padding:8px 14px;border-radius:8px;border:1px so
 .legend-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
 .legend-item.dimmed{opacity:.3}
 </style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2909395ab1f68bda1f10cc448b0010c8";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 </head>
 <body>
 <button class="hamburger" onclick="document.getElementById('sidebar').classList.toggle('open')">☰</button>
 <aside class="sidebar" id="sidebar">
-<div class="sidebar-header"><a href="index.html" class="logo"><img src="assets/kb-logo.svg" class="logo-icon" alt="巴菲特知识库 logo" width="32" height="32"><span>巴菲特知识库</span></a></div>
+<div class="sidebar-header"><a href="index.html" class="logo"><img src="assets/kb-logo.svg" class="logo-icon" alt="读懂巴菲特 logo" width="32" height="32"><span>读懂巴菲特</span></a></div>
 <div class="sidebar-nav">
 <a href="index.html" class="nav-link nav-home active">🏛 首页</a>
 <div class="search-box"><input type="text" id="search-input" placeholder="搜索标题或内容..." autocomplete="off"><div id="search-results"></div></div>
